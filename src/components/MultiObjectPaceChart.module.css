@@ -1,0 +1,122 @@
+.root {
+  min-height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 12px 24px 10px;
+}
+
+.metricSwitch {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.teamPickerWrap {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 10px;
+}
+
+.teamPicker {
+  flex: 1;
+  min-width: 0;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-3);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink-secondary);
+  font-size: 12px;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.legendItem:hover {
+  border-color: var(--line-mid);
+  color: var(--ink);
+}
+
+.legendItemActive {
+  color: var(--ink);
+  border-color: var(--line-hi);
+}
+
+.legendSwatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.chartWrap {
+  margin: 0 24px 14px;
+  padding: 12px 14px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0));
+}
+
+.visualLegend {
+  margin: 0 24px 12px;
+}
+
+@media (max-width: 840px) {
+  .toolbar {
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .teamPickerWrap {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .chartWrap {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .visualLegend {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

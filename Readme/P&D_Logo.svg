@@ -1,0 +1,96 @@
+<svg width="1900" height="420" viewBox="0 0 1900 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="100%" stop-color="#111A2E"/>
+    </linearGradient>
+
+    <linearGradient id="xGrad" x1="140" y1="140" x2="372" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF2D8D"/>
+      <stop offset="55%" stop-color="#FF4DA6"/>
+      <stop offset="100%" stop-color="#35E0FF"/>
+    </linearGradient>
+
+    <radialGradient id="coreGrad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(256 256) rotate(90) scale(34)">
+      <stop offset="0%" stop-color="#FFF2A6"/>
+      <stop offset="45%" stop-color="#FF8A5B"/>
+      <stop offset="100%" stop-color="#FF2D8D"/>
+    </radialGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <clipPath id="clip">
+      <rect x="40" y="40" width="432" height="432" rx="96"/>
+    </clipPath>
+  </defs>
+
+  <!-- icon -->
+  <g transform="translate(24,20) scale(0.74)">
+    <rect x="40" y="40" width="432" height="432" rx="96" fill="url(#bgGrad)"/>
+
+    <g clip-path="url(#clip)">
+      <g opacity="0.12">
+        <path d="M96 0V512M160 0V512M224 0V512M288 0V512M352 0V512M416 0V512" stroke="#35E0FF" stroke-width="1"/>
+        <path d="M0 96H512M0 160H512M0 224H512M0 288H512M0 352H512M0 416H512" stroke="#35E0FF" stroke-width="1"/>
+      </g>
+
+      <g opacity="0.9" filter="url(#glow)">
+        <path d="M256 108V184" stroke="#35E0FF" stroke-width="8" stroke-linecap="round"/>
+        <path d="M256 328V404" stroke="#35E0FF" stroke-width="8" stroke-linecap="round"/>
+        <path d="M108 256H184" stroke="#35E0FF" stroke-width="8" stroke-linecap="round"/>
+        <path d="M328 256H404" stroke="#35E0FF" stroke-width="8" stroke-linecap="round"/>
+
+        <path d="M244 128H268M244 152H268M244 176H268" stroke="#35E0FF" stroke-width="4" stroke-linecap="round"/>
+        <path d="M244 336H268M244 360H268M244 384H268" stroke="#35E0FF" stroke-width="4" stroke-linecap="round"/>
+        <path d="M128 244V268M152 244V268M176 244V268" stroke="#35E0FF" stroke-width="4" stroke-linecap="round"/>
+        <path d="M336 244V268M360 244V268M384 244V268" stroke="#35E0FF" stroke-width="4" stroke-linecap="round"/>
+      </g>
+
+      <g filter="url(#shadow)">
+        <path d="M166 146L256 236L346 146L386 186L296 276L386 366L346 406L256 316L166 406L126 366L216 276L126 186L166 146Z"
+              fill="url(#xGrad)"/>
+      </g>
+
+      <g opacity="0.18">
+        <path d="M183 163L329 309" stroke="white" stroke-width="8" stroke-linecap="round"/>
+        <path d="M329 163L183 309" stroke="white" stroke-width="8" stroke-linecap="round"/>
+      </g>
+
+      <g filter="url(#glow)">
+        <circle cx="256" cy="256" r="44" stroke="#35E0FF" stroke-width="6" opacity="0.95"/>
+        <circle cx="256" cy="256" r="20" stroke="#FF4DA6" stroke-width="4" opacity="0.95"/>
+        <path d="M256 198V222M256 290V314M198 256H222M290 256H314"
+              stroke="#35E0FF" stroke-width="6" stroke-linecap="round"/>
+      </g>
+
+      <g filter="url(#glow)">
+        <circle cx="256" cy="256" r="18" fill="url(#coreGrad)"/>
+        <circle cx="256" cy="256" r="7" fill="#FFF7CC"/>
+      </g>
+
+      <g opacity="0.95">
+        <circle cx="346" cy="146" r="10" fill="#35E0FF"/>
+        <circle cx="346" cy="146" r="20" stroke="#35E0FF" stroke-opacity="0.25" stroke-width="4"/>
+      </g>
+    </g>
+
+    <rect x="40" y="40" width="432" height="432" rx="96" stroke="url(#xGrad)" stroke-opacity="0.22" stroke-width="2"/>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(430,36)">
+    <text x="0" y="178" text-anchor="start" font-family="Noto Sans, sans-serif" font-size="189" font-weight="950" letter-spacing="-4.2" fill="#111318">Valo<tspan fill="#FF4655">Ops</tspan></text>
+    <text x="18" y="304" text-anchor="start" font-family="SF Pro Display, SF Pro Text, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="93" font-weight="700" letter-spacing="0" fill="#4A5160">Panel &amp; Datasets</text>
+  </g>
+</svg>

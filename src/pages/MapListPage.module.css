@@ -1,0 +1,73 @@
+.hero {
+  display: grid;
+  gap: 12px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.18), transparent 32%),
+    radial-gradient(circle at left center, rgba(255, 70, 85, 0.2), transparent 30%),
+    linear-gradient(135deg, rgba(22, 27, 34, 0.96), rgba(28, 35, 51, 0.92));
+  box-shadow: var(--shadow-md);
+}
+
+.heroCopy {
+  max-width: 56ch;
+  color: var(--ink-secondary);
+}
+
+.mapCard {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  min-height: 160px;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)), var(--surface-2);
+  transition:
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+  cursor: pointer;
+}
+
+.mapCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--line-hi);
+  box-shadow: var(--shadow-md);
+}
+
+.mapCard:active {
+  transform: translateY(-1px);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.metaLine {
+  color: var(--ink-secondary);
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  color: var(--ink-subtle);
+  font-size: 13px;
+}
+
+.enterLink {
+  color: var(--ink-secondary);
+  transition: color var(--transition-base);
+}
+
+.mapCard:hover .enterLink {
+  color: var(--accent);
+}
