@@ -1,6 +1,6 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-03-14T05:28:27.022470Z",
+  "generatedAt": "2026-03-15T14:52:03.546798Z",
   "mapName": "Corrode",
   "teams": [
     {
@@ -14,7 +14,7 @@
   ],
   "samples": [
     {
-      "id": 1,
+      "id": 7,
       "mapName": "Corrode",
       "matchId": "598949",
       "teamSlug": "dragon-ranger-gaming",
@@ -25,7 +25,7 @@
       "sourceUpdatedAt": "2026-03-09T16:59:19.970686+00:00"
     },
     {
-      "id": 2,
+      "id": 8,
       "mapName": "Corrode",
       "matchId": "598949",
       "teamSlug": "edward-gaming",
@@ -38,7 +38,7 @@
   ],
   "rounds": [
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "plantSite": null,
@@ -47,7 +47,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "plantSite": null,
@@ -56,7 +56,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "plantSite": null,
@@ -65,7 +65,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "plantSite": null,
@@ -74,7 +74,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 5,
       "teamSide": "atk",
       "plantSite": null,
@@ -83,7 +83,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "plantSite": null,
@@ -92,7 +92,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "plantSite": "A",
@@ -101,7 +101,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "plantSite": "B",
@@ -110,7 +110,7 @@
       "plantTimeBucket": 1
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "plantSite": null,
@@ -119,7 +119,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "plantSite": null,
@@ -128,7 +128,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "plantSite": "A",
@@ -137,7 +137,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "plantSite": "A",
@@ -146,7 +146,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "plantSite": "B",
@@ -155,7 +155,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "plantSite": "A",
@@ -164,7 +164,7 @@
       "plantTimeBucket": 5
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "plantSite": null,
@@ -173,7 +173,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "plantSite": "A",
@@ -182,7 +182,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "plantSite": "A",
@@ -191,7 +191,7 @@
       "plantTimeBucket": 6
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "plantSite": null,
@@ -200,7 +200,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "plantSite": "B",
@@ -209,7 +209,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "plantSite": null,
@@ -218,7 +218,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "plantSite": null,
@@ -227,7 +227,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "plantSite": null,
@@ -236,7 +236,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "plantSite": null,
@@ -245,7 +245,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 5,
       "teamSide": "def",
       "plantSite": null,
@@ -254,7 +254,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "plantSite": null,
@@ -263,7 +263,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "plantSite": "A",
@@ -272,7 +272,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "plantSite": "B",
@@ -281,7 +281,7 @@
       "plantTimeBucket": 1
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "plantSite": null,
@@ -290,7 +290,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "plantSite": null,
@@ -299,7 +299,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "plantSite": "A",
@@ -308,7 +308,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "plantSite": "A",
@@ -317,7 +317,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "plantSite": "B",
@@ -326,7 +326,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "plantSite": "A",
@@ -335,7 +335,7 @@
       "plantTimeBucket": 5
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "plantSite": null,
@@ -344,7 +344,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "plantSite": "A",
@@ -353,7 +353,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "plantSite": "A",
@@ -362,7 +362,7 @@
       "plantTimeBucket": 6
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "plantSite": null,
@@ -371,7 +371,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "plantSite": "B",
@@ -382,7 +382,7 @@
   ],
   "kills": [
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -398,7 +398,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -414,7 +414,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -430,7 +430,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -446,7 +446,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -462,7 +462,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -478,7 +478,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -494,7 +494,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -510,7 +510,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -526,7 +526,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -542,7 +542,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -558,7 +558,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -574,7 +574,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -590,7 +590,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -606,7 +606,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -622,7 +622,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -638,7 +638,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -654,7 +654,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -670,7 +670,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -686,7 +686,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -702,7 +702,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -718,7 +718,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -734,7 +734,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -750,7 +750,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -766,7 +766,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -782,7 +782,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -798,7 +798,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -814,7 +814,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -830,7 +830,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -846,7 +846,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -862,7 +862,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -878,7 +878,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -894,7 +894,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -910,7 +910,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -926,7 +926,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -942,7 +942,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -958,7 +958,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -974,7 +974,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -990,7 +990,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1006,7 +1006,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1022,7 +1022,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1038,7 +1038,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1054,7 +1054,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1070,7 +1070,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1086,7 +1086,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1102,7 +1102,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1118,7 +1118,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1134,7 +1134,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1150,7 +1150,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1166,7 +1166,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1182,7 +1182,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1198,7 +1198,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1214,7 +1214,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1230,7 +1230,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1246,7 +1246,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1262,7 +1262,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1278,7 +1278,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1294,7 +1294,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1310,7 +1310,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1326,7 +1326,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1342,7 +1342,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1358,7 +1358,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1374,7 +1374,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1390,7 +1390,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1406,7 +1406,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1422,7 +1422,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1438,7 +1438,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1454,7 +1454,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1470,7 +1470,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1486,7 +1486,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1502,7 +1502,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1518,7 +1518,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1534,7 +1534,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1550,7 +1550,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1566,7 +1566,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1582,7 +1582,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1598,7 +1598,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1614,7 +1614,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1630,7 +1630,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1646,7 +1646,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1662,7 +1662,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1678,7 +1678,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1694,7 +1694,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1710,7 +1710,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1726,7 +1726,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1742,7 +1742,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1758,7 +1758,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1774,7 +1774,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1790,7 +1790,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1806,7 +1806,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1822,7 +1822,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1838,7 +1838,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1854,7 +1854,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1870,7 +1870,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1886,7 +1886,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1902,7 +1902,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1918,7 +1918,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1934,7 +1934,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1950,7 +1950,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1966,7 +1966,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1982,7 +1982,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1998,7 +1998,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2014,7 +2014,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2030,7 +2030,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2046,7 +2046,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2062,7 +2062,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2078,7 +2078,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2094,7 +2094,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2110,7 +2110,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2126,7 +2126,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2142,7 +2142,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2158,7 +2158,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2174,7 +2174,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2190,7 +2190,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2206,7 +2206,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2222,7 +2222,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2238,7 +2238,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2254,7 +2254,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2270,7 +2270,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2286,7 +2286,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2302,7 +2302,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2318,7 +2318,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2334,7 +2334,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2350,7 +2350,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2366,7 +2366,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2382,7 +2382,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2398,7 +2398,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2414,7 +2414,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2430,7 +2430,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2446,7 +2446,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2462,7 +2462,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2478,7 +2478,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2494,7 +2494,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2510,7 +2510,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 1,
+      "sampleId": 7,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2526,7 +2526,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2542,7 +2542,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2558,7 +2558,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2574,7 +2574,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2590,7 +2590,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2606,7 +2606,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2622,7 +2622,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2638,7 +2638,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2654,7 +2654,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2670,7 +2670,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2686,7 +2686,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2702,7 +2702,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2718,7 +2718,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2734,7 +2734,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2750,7 +2750,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2766,7 +2766,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2782,7 +2782,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2798,7 +2798,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2814,7 +2814,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2830,7 +2830,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2846,7 +2846,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2862,7 +2862,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2878,7 +2878,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2894,7 +2894,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2910,7 +2910,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2926,7 +2926,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2942,7 +2942,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2958,7 +2958,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2974,7 +2974,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2990,7 +2990,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3006,7 +3006,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3022,7 +3022,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3038,7 +3038,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3054,7 +3054,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3070,7 +3070,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3086,7 +3086,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3102,7 +3102,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3118,7 +3118,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3134,7 +3134,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3150,7 +3150,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3166,7 +3166,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3182,7 +3182,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3198,7 +3198,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3214,7 +3214,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3230,7 +3230,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3246,7 +3246,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3262,7 +3262,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3278,7 +3278,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3294,7 +3294,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3310,7 +3310,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3326,7 +3326,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3342,7 +3342,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3358,7 +3358,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3374,7 +3374,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3390,7 +3390,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3406,7 +3406,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3422,7 +3422,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3438,7 +3438,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3454,7 +3454,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3470,7 +3470,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3486,7 +3486,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3502,7 +3502,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3518,7 +3518,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3534,7 +3534,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3550,7 +3550,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3566,7 +3566,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3582,7 +3582,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3598,7 +3598,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3614,7 +3614,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3630,7 +3630,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3646,7 +3646,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3662,7 +3662,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3678,7 +3678,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3694,7 +3694,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3710,7 +3710,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3726,7 +3726,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3742,7 +3742,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3758,7 +3758,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3774,7 +3774,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3790,7 +3790,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3806,7 +3806,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3822,7 +3822,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3838,7 +3838,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3854,7 +3854,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3870,7 +3870,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3886,7 +3886,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3902,7 +3902,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3918,7 +3918,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3934,7 +3934,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3950,7 +3950,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3966,7 +3966,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3982,7 +3982,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3998,7 +3998,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4014,7 +4014,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4030,7 +4030,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4046,7 +4046,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4062,7 +4062,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4078,7 +4078,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4094,7 +4094,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4110,7 +4110,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4126,7 +4126,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4142,7 +4142,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4158,7 +4158,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4174,7 +4174,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4190,7 +4190,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4206,7 +4206,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4222,7 +4222,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4238,7 +4238,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4254,7 +4254,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4270,7 +4270,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4286,7 +4286,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4302,7 +4302,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4318,7 +4318,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4334,7 +4334,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4350,7 +4350,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4366,7 +4366,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4382,7 +4382,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4398,7 +4398,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4414,7 +4414,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4430,7 +4430,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4446,7 +4446,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4462,7 +4462,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4478,7 +4478,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4494,7 +4494,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4510,7 +4510,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4526,7 +4526,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4542,7 +4542,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4558,7 +4558,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4574,7 +4574,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4590,7 +4590,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4606,7 +4606,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4622,7 +4622,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4638,7 +4638,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4654,7 +4654,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 2,
+      "sampleId": 8,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
