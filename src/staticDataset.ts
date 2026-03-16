@@ -23,6 +23,8 @@ export type StaticSampleRow = {
   id: number
   mapName: string
   matchId: string
+  tournamentId?: string | null
+  tournamentName?: string | null
   teamSlug: string
   teamName: string
   opponentSlug: string

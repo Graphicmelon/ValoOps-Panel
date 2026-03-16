@@ -70,6 +70,7 @@ const EMPTY_FILTERS: DashboardObjectFilters = {
   subject: 'killer',
   include_post_round: true,
   include_ability: true,
+  tournamentIds: [],
   opponents: [],
   matchIds: [],
 }
@@ -100,7 +101,12 @@ function createDraftObject(filters?: DashboardObjectFilters, teamSlug?: string):
     id: `compare-object-${objectSeed}`,
     teamSlug,
     filters: filters
-      ? { ...filters, opponents: [...filters.opponents], matchIds: [...filters.matchIds] }
+      ? {
+          ...filters,
+          tournamentIds: [...filters.tournamentIds],
+          opponents: [...filters.opponents],
+          matchIds: [...filters.matchIds],
+        }
       : { ...EMPTY_FILTERS },
   }
 }
@@ -126,25 +132,139 @@ function IndeterminateCheckbox({
 type SourcePickerProps = {
   options: TeamMapObjectOptionsResponse | undefined
   matchIds: string[]
-  onChange: (matchIds: string[]) => void
+  onChange: (next: { tournamentIds: string[]; matchIds: string[] }) => void
 }
 
 function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
-  const [expanded, setExpanded] = useState<Set<string>>(new Set())
+  const [expandedTournaments, setExpandedTournaments] = useState<Set<string>>(new Set())
+  const [expandedOpponents, setExpandedOpponents] = useState<Set<string>>(new Set())
 
-  const groups = useMemo(() => {
-    const map = new Map<string, { name: string; matches: DashboardMatchOption[] }>()
-    for (const opp of options?.opponents ?? []) {
-      map.set(opp.slug, { name: getTeamDisplayName(opp.name, opp.slug), matches: [] })
+  const tournamentGroups = useMemo(() => {
+    function normalizeOptional(value: string | null | undefined): string | null {
+      if (typeof value !== 'string') {
+        return null
+      }
+      const compact = value.trim()
+      return compact.length > 0 ? compact : null
     }
+
+    function compareMatch(left: DashboardMatchOption, right: DashboardMatchOption): number {
+      if (left.matchDateCode !== right.matchDateCode) {
+        if (left.matchDateCode === null) return 1
+        if (right.matchDateCode === null) return -1
+        const byDate = right.matchDateCode.localeCompare(left.matchDateCode)
+        if (byDate !== 0) return byDate
+      }
+      const byUpdatedAt = right.updatedAt.localeCompare(left.updatedAt)
+      if (byUpdatedAt !== 0) return byUpdatedAt
+      return right.matchId.localeCompare(left.matchId)
+    }
+
+    const groups = new Map<
+      string,
+      {
+        tournamentId: string | null
+        tournamentName: string
+        matches: DashboardMatchOption[]
+        opponents: Map<string, { name: string; matches: DashboardMatchOption[] }>
+      }
+    >()
+
     for (const match of options?.matches ?? []) {
-      map.get(match.opponentSlug)?.matches.push(match)
+      const tournamentId = normalizeOptional(match.tournamentId)
+      const tournamentName =
+        normalizeOptional(match.tournamentName) ?? tournamentId ?? '未标注赛事'
+      const tournamentKey = tournamentId ?? '__unknown_tournament__'
+      let tournament = groups.get(tournamentKey)
+      if (!tournament) {
+        tournament = {
+          tournamentId,
+          tournamentName,
+          matches: [],
+          opponents: new Map(),
+        }
+        groups.set(tournamentKey, tournament)
+      } else if (tournament.tournamentName === tournament.tournamentId && match.tournamentName) {
+        tournament.tournamentName = match.tournamentName
+      }
+
+      tournament.matches.push(match)
+      const opponentName = getTeamDisplayName(match.opponentName, match.opponentSlug)
+      const opponent = tournament.opponents.get(match.opponentSlug)
+      if (opponent) {
+        opponent.matches.push(match)
+      } else {
+        tournament.opponents.set(match.opponentSlug, { name: opponentName, matches: [match] })
+      }
     }
-    return [...map.entries()].map(([slug, data]) => ({ slug, ...data }))
+
+    return [...groups.entries()]
+      .map(([key, tournament]) => {
+        const matches = [...tournament.matches].sort(compareMatch)
+        const opponents = [...tournament.opponents.entries()]
+          .map(([slug, opponent]) => ({
+            slug,
+            name: opponent.name,
+            matches: [...opponent.matches].sort(compareMatch),
+          }))
+          .sort((a, b) => a.name.localeCompare(b.name))
+        return {
+          key,
+          tournamentId: tournament.tournamentId,
+          name: tournament.tournamentName,
+          matches,
+          opponents,
+        }
+      })
+      .sort((left, right) => {
+        const leftUnknown = left.tournamentId === null
+        const rightUnknown = right.tournamentId === null
+        if (leftUnknown !== rightUnknown) {
+          return leftUnknown ? 1 : -1
+        }
+        const leftTop = left.matches[0]
+        const rightTop = right.matches[0]
+        if (leftTop && rightTop) {
+          const byRecent = compareMatch(leftTop, rightTop)
+          if (byRecent !== 0) {
+            return byRecent
+          }
+        }
+        return left.name.localeCompare(right.name)
+      })
+  }, [options])
+
+  const tournamentIdByMatchId = useMemo(() => {
+    const output = new Map<string, string>()
+    for (const match of options?.matches ?? []) {
+      if (typeof match.tournamentId !== 'string') {
+        continue
+      }
+      const compact = match.tournamentId.trim()
+      if (!compact) {
+        continue
+      }
+      output.set(match.matchId, compact)
+    }
+    return output
   }, [options])
 
   const matchIdSet = useMemo(() => new Set(matchIds), [matchIds])
-  const totalMatches = groups.reduce((acc, g) => acc + g.matches.length, 0)
+  const totalMatches = tournamentGroups.reduce((acc, group) => acc + group.matches.length, 0)
+
+  function emit(nextMatchIdSet: Set<string>) {
+    const nextTournamentIdSet = new Set<string>()
+    for (const matchId of nextMatchIdSet) {
+      const tournamentId = tournamentIdByMatchId.get(matchId)
+      if (tournamentId) {
+        nextTournamentIdSet.add(tournamentId)
+      }
+    }
+    onChange({
+      tournamentIds: [...nextTournamentIdSet],
+      matchIds: [...nextMatchIdSet],
+    })
+  }
 
   function toggleMatch(matchId: string) {
     const next = new Set(matchIdSet)
@@ -153,25 +273,50 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
     } else {
       next.add(matchId)
     }
-    onChange([...next])
+    emit(next)
   }
 
-  function toggleOpponent(slug: string, matches: DashboardMatchOption[]) {
+  function toggleTournament(matches: DashboardMatchOption[]) {
+    const ids = matches.map((match) => match.matchId)
+    const allSelected = ids.every((id) => matchIdSet.has(id))
+    const next = new Set(matchIdSet)
+    if (allSelected) {
+      ids.forEach((id) => next.delete(id))
+    } else {
+      ids.forEach((id) => next.add(id))
+    }
+    emit(next)
+  }
+
+  function toggleOpponent(matches: DashboardMatchOption[]) {
     const ids = matches.map((m) => m.matchId)
     const allSelected = ids.every((id) => matchIdSet.has(id))
     const next = new Set(matchIdSet)
     if (allSelected) ids.forEach((id) => next.delete(id))
     else ids.forEach((id) => next.add(id))
-    onChange([...next])
+    emit(next)
   }
 
-  function toggleExpand(slug: string) {
-    setExpanded((cur) => {
+  function toggleExpandTournament(tournamentKey: string) {
+    setExpandedTournaments((cur) => {
       const next = new Set(cur)
-      if (next.has(slug)) {
-        next.delete(slug)
+      if (next.has(tournamentKey)) {
+        next.delete(tournamentKey)
       } else {
-        next.add(slug)
+        next.add(tournamentKey)
+      }
+      return next
+    })
+  }
+
+  function toggleExpandOpponent(tournamentKey: string, opponentSlug: string) {
+    const key = `${tournamentKey}:${opponentSlug}`
+    setExpandedOpponents((cur) => {
+      const next = new Set(cur)
+      if (next.has(key)) {
+        next.delete(key)
+      } else {
+        next.add(key)
       }
       return next
     })
@@ -186,7 +331,11 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
       <div className={styles.sourcePickerHeader}>
         <span className={styles.fieldLabel}>数据来源</span>
         {matchIds.length > 0 ? (
-          <button type="button" className={styles.clearBtn} onClick={() => onChange([])}>
+          <button
+            type="button"
+            className={styles.clearBtn}
+            onClick={() => onChange({ tournamentIds: [], matchIds: [] })}
+          >
             已选 {matchIds.length}/{totalMatches} 场 · 清除
           </button>
         ) : (
@@ -196,45 +345,87 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
 
       <div className={styles.sourceTree}>
         {!options && <p className={styles.sourceHint}>请先选择队伍</p>}
-        {options && groups.length === 0 && <p className={styles.sourceHint}>暂无对战数据</p>}
-        {groups.map(({ slug, name, matches }) => {
-          const selCount = matches.filter((m) => matchIdSet.has(m.matchId)).length
-          const allSel = selCount === matches.length && matches.length > 0
-          const someSel = selCount > 0 && !allSel
-          const isOpen = expanded.has(slug)
+        {options && tournamentGroups.length === 0 && <p className={styles.sourceHint}>暂无对战数据</p>}
+        {tournamentGroups.map((tournament) => {
+          const selectedMatchCount = tournament.matches.filter((match) =>
+            matchIdSet.has(match.matchId),
+          ).length
+          const allSelected = selectedMatchCount === tournament.matches.length && tournament.matches.length > 0
+          const someSelected = selectedMatchCount > 0 && !allSelected
+          const tournamentOpen = expandedTournaments.has(tournament.key)
           return (
-            <div key={slug} className={styles.oppGroup}>
-              <div className={styles.oppRow}>
+            <div key={tournament.key} className={styles.tournamentGroup}>
+              <div className={styles.tournamentRow}>
                 <button
                   type="button"
-                  className={`${styles.expandBtn} ${isOpen ? styles.expandBtnOpen : ''}`}
-                  onClick={() => toggleExpand(slug)}
-                  aria-label={isOpen ? '收起' : '展开'}
+                  className={`${styles.expandBtn} ${tournamentOpen ? styles.expandBtnOpen : ''}`}
+                  onClick={() => toggleExpandTournament(tournament.key)}
+                  aria-label={tournamentOpen ? '收起' : '展开'}
                 >
                   ▸
                 </button>
                 <label className={styles.checkRow}>
                   <IndeterminateCheckbox
-                    checked={allSel}
-                    indeterminate={someSel}
-                    onChange={() => toggleOpponent(slug, matches)}
+                    checked={allSelected}
+                    indeterminate={someSelected}
+                    onChange={() => toggleTournament(tournament.matches)}
                   />
-                  <span className={styles.oppName}>{name}</span>
-                  <span className={styles.oppCount}>{matches.length}</span>
+                  <span className={styles.tournamentName}>{tournament.name}</span>
+                  <span className={styles.oppCount}>{tournament.matches.length}</span>
                 </label>
               </div>
-              {isOpen && (
-                <div className={styles.matchList}>
-                  {matches.map((match) => (
-                    <label key={match.matchId} className={`${styles.checkRow} ${styles.matchRow}`}>
-                      <input
-                        type="checkbox"
-                        checked={matchIdSet.has(match.matchId)}
-                        onChange={() => toggleMatch(match.matchId)}
-                      />
-                      <span className={styles.matchDate}>{formatMatchLabel(match)}</span>
-                    </label>
-                  ))}
+              {tournamentOpen && (
+                <div className={styles.opponentTree}>
+                  {tournament.opponents.map((opponent) => {
+                    const opponentSelectedCount = opponent.matches.filter((match) =>
+                      matchIdSet.has(match.matchId),
+                    ).length
+                    const opponentAllSelected =
+                      opponentSelectedCount === opponent.matches.length && opponent.matches.length > 0
+                    const opponentSomeSelected = opponentSelectedCount > 0 && !opponentAllSelected
+                    const opponentExpandKey = `${tournament.key}:${opponent.slug}`
+                    const opponentOpen = expandedOpponents.has(opponentExpandKey)
+                    return (
+                      <div key={opponentExpandKey} className={styles.oppGroup}>
+                        <div className={styles.oppRow}>
+                          <button
+                            type="button"
+                            className={`${styles.expandBtn} ${opponentOpen ? styles.expandBtnOpen : ''}`}
+                            onClick={() => toggleExpandOpponent(tournament.key, opponent.slug)}
+                            aria-label={opponentOpen ? '收起' : '展开'}
+                          >
+                            ▸
+                          </button>
+                          <label className={styles.checkRow}>
+                            <IndeterminateCheckbox
+                              checked={opponentAllSelected}
+                              indeterminate={opponentSomeSelected}
+                              onChange={() => toggleOpponent(opponent.matches)}
+                            />
+                            <span className={styles.oppName}>{opponent.name}</span>
+                            <span className={styles.oppCount}>{opponent.matches.length}</span>
+                          </label>
+                        </div>
+                        {opponentOpen && (
+                          <div className={styles.matchList}>
+                            {opponent.matches.map((match) => (
+                              <label
+                                key={match.matchId}
+                                className={`${styles.checkRow} ${styles.matchRow}`}
+                              >
+                                <input
+                                  type="checkbox"
+                                  checked={matchIdSet.has(match.matchId)}
+                                  onChange={() => toggleMatch(match.matchId)}
+                                />
+                                <span className={styles.matchDate}>{formatMatchLabel(match)}</span>
+                              </label>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
                 </div>
               )}
             </div>
@@ -799,6 +990,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                               teamSlug: event.target.value || undefined,
                               filters: {
                                 ...current.filters,
+                                tournamentIds: [],
                                 opponents: [],
                                 matchIds: [],
                               },
@@ -817,10 +1009,10 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                       <SourcePicker
                         options={options}
                         matchIds={item.filters.matchIds}
-                        onChange={(matchIds) =>
+                        onChange={({ tournamentIds, matchIds }) =>
                           updateObject(item.id, (current) => ({
                             ...current,
-                            filters: { ...current.filters, opponents: [], matchIds },
+                            filters: { ...current.filters, tournamentIds, opponents: [], matchIds },
                           }))
                         }
                       />

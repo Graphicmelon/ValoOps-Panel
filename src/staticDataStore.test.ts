@@ -109,6 +109,7 @@ const dashboardPayload: DashboardRequest = {
         subject: 'killer',
         include_post_round: true,
         include_ability: true,
+        tournamentIds: [],
         opponents: [],
         matchIds: [],
       },

@@ -63,6 +63,8 @@ function setupMapApiMocks(timeRange: TimeRangePayload = null) {
       matches: [
         {
           matchId: `${teamSlug}-match-1`,
+          tournamentId: 'tournament-1',
+          tournamentName: 'VCT 2026: China Kickoff',
           opponentSlug: teamSlug === 't1' ? 'edward-gaming' : 't1',
           opponentName: teamSlug === 't1' ? 'EDward Gaming' : 'T1',
           matchDateCode: '260209',
@@ -241,6 +243,7 @@ it('shows matchDateCode with matchId in source picker second-level items', async
   fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
 
   await screen.findByText('数据来源')
+  fireEvent.click(screen.getAllByRole('button', { name: '展开' })[0])
   fireEvent.click(screen.getAllByRole('button', { name: '展开' })[0])
 
   expect(await screen.findByText('260209-edward-gaming-match-1')).toBeInTheDocument()

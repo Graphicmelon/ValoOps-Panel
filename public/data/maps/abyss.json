@@ -1,6 +1,6 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-03-15T14:52:03.546798Z",
+  "generatedAt": "2026-03-16T06:51:10.470919Z",
   "mapName": "Abyss",
   "teams": [
     {
@@ -17,6 +17,8 @@
       "id": 15,
       "mapName": "Abyss",
       "matchId": "598950",
+      "tournamentId": "18620ba560da454cad3ac9a29e56ad4c",
+      "tournamentName": "VCT 2026: China Kickoff",
       "teamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
       "teamName": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)",
       "opponentSlug": "edward-gaming",
@@ -28,6 +30,8 @@
       "id": 16,
       "mapName": "Abyss",
       "matchId": "598950",
+      "tournamentId": "18620ba560da454cad3ac9a29e56ad4c",
+      "tournamentName": "VCT 2026: China Kickoff",
       "teamSlug": "edward-gaming",
       "teamName": "EDward Gaming",
       "opponentSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",

@@ -52,6 +52,14 @@ function dedupeStrings(values: readonly string[]): string[] {
   return [...new Set(values)]
 }
 
+function normalizeOptionalString(value: string | null | undefined): string | null {
+  if (typeof value !== 'string') {
+    return null
+  }
+  const compact = value.trim()
+  return compact.length > 0 ? compact : null
+}
+
 function mapNameEquals(left: string, right: string): boolean {
   return left.trim().toLowerCase() === right.trim().toLowerCase()
 }
@@ -125,11 +133,13 @@ function loadContext(
   teamSlug: string,
   mapName: string,
   {
+    tournamentIds,
     opponents,
     matchIds,
     includeRounds,
     includeKills,
   }: {
+    tournamentIds?: readonly string[]
     opponents?: readonly string[]
     matchIds?: readonly string[]
     includeRounds: boolean
@@ -144,6 +154,17 @@ function loadContext(
   let samples = shard.samples.filter(
     (sample) => sample.teamSlug === teamSlug && mapNameEquals(sample.mapName, mapName),
   )
+
+  const requestedTournamentIds = dedupeStrings(
+    (tournamentIds ?? []).map((value) => value.trim()).filter((value) => value.length > 0),
+  )
+  if (requestedTournamentIds.length > 0) {
+    const tournamentIdSet = new Set(requestedTournamentIds)
+    samples = samples.filter((sample) => {
+      const tournamentId = normalizeOptionalString(sample.tournamentId)
+      return tournamentId !== null && tournamentIdSet.has(tournamentId)
+    })
+  }
 
   const requestedOpponents = dedupeStrings(opponents ?? [])
   if (requestedOpponents.length > 0) {
@@ -396,6 +417,9 @@ function resolveDashboardFilters(
     time_bucket: timeBucket,
     heatmap_time_min: heatmapTimeMin,
     heatmap_time_max: heatmapTimeMax,
+    tournamentIds: dedupeStrings(
+      objectFilters.tournamentIds.map((value) => value.trim()).filter((value) => value.length > 0),
+    ),
     opponents: dedupeStrings(objectFilters.opponents),
     matchIds: dedupeStrings(objectFilters.matchIds),
     emptyReason: reasons[0] ?? null,
@@ -757,6 +781,8 @@ export async function getTeamMapOptionsFromStaticData(
 
     const candidate: DashboardMatchOption = {
       matchId: sample.matchId,
+      tournamentId: normalizeOptionalString(sample.tournamentId),
+      tournamentName: normalizeOptionalString(sample.tournamentName),
       opponentSlug: sample.opponentSlug,
       opponentName: sample.opponentName,
       matchDateCode: sample.matchDateCode,
@@ -791,6 +817,7 @@ export async function getMapDashboardFromStaticData(
 
   for (const item of payload.objects) {
     const context = loadContext(shard, item.teamSlug, mapName, {
+      tournamentIds: item.filters.tournamentIds,
       opponents: item.filters.opponents,
       matchIds: item.filters.matchIds,
       includeRounds: true,
@@ -842,6 +869,9 @@ export function withDefaultObjectFilters(item: DashboardObjectRequest): Dashboar
       time_bucket: item.filters.time_bucket,
       heatmap_time_min: item.filters.heatmap_time_min,
       heatmap_time_max: item.filters.heatmap_time_max,
+      tournamentIds: dedupeStrings(
+        item.filters.tournamentIds.map((value) => value.trim()).filter((value) => value.length > 0),
+      ),
       opponents: dedupeStrings(item.filters.opponents),
       matchIds: dedupeStrings(item.filters.matchIds),
     },

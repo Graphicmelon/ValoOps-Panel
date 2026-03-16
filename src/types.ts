@@ -37,6 +37,8 @@ export type DashboardOpponentOption = {
 
 export type DashboardMatchOption = {
   matchId: string
+  tournamentId: string | null
+  tournamentName: string | null
   opponentSlug: string
   opponentName: string
   matchDateCode: string | null
@@ -64,6 +66,7 @@ export type DashboardFilters = {
 }
 
 export type DashboardObjectFilters = DashboardFilters & {
+  tournamentIds: string[]
   opponents: string[]
   matchIds: string[]
 }

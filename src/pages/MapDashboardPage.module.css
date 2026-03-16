@@ -204,6 +204,42 @@
   flex-direction: column;
 }
 
+.tournamentGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.tournamentRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.02);
+  transition: background var(--transition-fast);
+}
+
+.tournamentRow:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.tournamentName {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.opponentTree {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-left: 18px;
+}
+
 .oppRow {
   display: flex;
   align-items: center;

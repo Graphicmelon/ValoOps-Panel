@@ -35,6 +35,8 @@ const shardFixture: StaticMapShard = {
       id: 1,
       mapName: 'Pearl',
       matchId: '598950',
+      tournamentId: 'tournament-1',
+      tournamentName: 'VCT 2026: China Kickoff',
       teamSlug: 'edward-gaming',
       teamName: 'EDward Gaming',
       opponentSlug: 't1',
@@ -46,6 +48,8 @@ const shardFixture: StaticMapShard = {
       id: 2,
       mapName: 'Pearl',
       matchId: '598950',
+      tournamentId: 'tournament-1',
+      tournamentName: 'VCT 2026: China Kickoff',
       teamSlug: 't1',
       teamName: 'T1',
       opponentSlug: 'edward-gaming',
@@ -57,6 +61,8 @@ const shardFixture: StaticMapShard = {
       id: 3,
       mapName: 'Pearl',
       matchId: '598949',
+      tournamentId: 'tournament-1',
+      tournamentName: 'VCT 2026: China Kickoff',
       teamSlug: 'edward-gaming',
       teamName: 'EDward Gaming',
       opponentSlug: 't1',
@@ -68,6 +74,8 @@ const shardFixture: StaticMapShard = {
       id: 4,
       mapName: 'Pearl',
       matchId: '598949',
+      tournamentId: 'tournament-1',
+      tournamentName: 'VCT 2026: China Kickoff',
       teamSlug: 't1',
       teamName: 'T1',
       opponentSlug: 'edward-gaming',
@@ -79,6 +87,8 @@ const shardFixture: StaticMapShard = {
       id: 5,
       mapName: 'Pearl',
       matchId: '598948',
+      tournamentId: null,
+      tournamentName: null,
       teamSlug: 'edward-gaming',
       teamName: 'EDward Gaming',
       opponentSlug: 't1',
@@ -90,6 +100,8 @@ const shardFixture: StaticMapShard = {
       id: 6,
       mapName: 'Pearl',
       matchId: '598948',
+      tournamentId: null,
+      tournamentName: null,
       teamSlug: 't1',
       teamName: 'T1',
       opponentSlug: 'edward-gaming',
@@ -287,6 +299,8 @@ it('lists maps and returns map/team options from static dataset', async () => {
   expect(teamOptions.matches).toEqual([
     {
       matchId: '598950',
+      tournamentId: 'tournament-1',
+      tournamentName: 'VCT 2026: China Kickoff',
       opponentSlug: 't1',
       opponentName: 'T1',
       matchDateCode: '260209',
@@ -294,6 +308,8 @@ it('lists maps and returns map/team options from static dataset', async () => {
     },
     {
       matchId: '598949',
+      tournamentId: 'tournament-1',
+      tournamentName: 'VCT 2026: China Kickoff',
       opponentSlug: 't1',
       opponentName: 'T1',
       matchDateCode: '260207',
@@ -301,12 +317,125 @@ it('lists maps and returns map/team options from static dataset', async () => {
     },
     {
       matchId: '598948',
+      tournamentId: null,
+      tournamentName: null,
       opponentSlug: 't1',
       opponentName: 'T1',
       matchDateCode: null,
       updatedAt: '2026-03-11T00:00:00Z',
     },
   ])
+})
+
+it('keeps compatibility when tournament fields are missing in legacy shards', async () => {
+  vi.resetModules()
+  const legacyShard = JSON.parse(JSON.stringify(shardFixture)) as StaticMapShard
+  for (const sample of legacyShard.samples as Array<Record<string, unknown>>) {
+    delete sample.tournamentId
+    delete sample.tournamentName
+  }
+  legacyShard.mapName = 'Pearl Legacy'
+  for (const sample of legacyShard.samples) {
+    sample.mapName = 'Pearl Legacy'
+  }
+  const legacyManifest: StaticDatasetManifest = {
+    version: 'static-dataset-v1',
+    generatedAt: '2026-03-10T00:00:00Z',
+    maps: [
+      {
+        mapName: 'Pearl Legacy',
+        sampleCount: legacyShard.samples.length,
+        teamCount: 2,
+        lastUpdatedAt: '2026-03-10T00:00:00Z',
+        shard: 'maps/pearl-legacy.json',
+      },
+    ],
+  }
+
+  const fetchMock = vi.fn(async (input: RequestInfo | URL) => {
+    const url = typeof input === 'string' ? input : input instanceof URL ? input.toString() : input.url
+    const pathname = new URL(url, 'http://localhost').pathname
+    if (pathname === '/data/manifest.json') {
+      return new Response(JSON.stringify(legacyManifest), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      })
+    }
+    if (pathname === '/data/maps/pearl-legacy.json') {
+      return new Response(JSON.stringify(legacyShard), {
+        status: 200,
+        headers: { 'Content-Type': 'application/json' },
+      })
+    }
+    return new Response('Not Found', { status: 404 })
+  })
+  vi.stubGlobal('fetch', fetchMock)
+
+  const queryEngine = await import('./staticQueryEngine')
+  const teamOptions = await queryEngine.getTeamMapOptionsFromStaticData('Pearl Legacy', 'edward-gaming')
+  for (const match of teamOptions.matches) {
+    expect(match.tournamentId).toBeNull()
+    expect(match.tournamentName).toBeNull()
+  }
+
+  vi.resetModules()
+})
+
+it('supports tournamentIds filtering and intersects with matchIds', async () => {
+  const dashboard = await getMapDashboardFromStaticData('Pearl', {
+    globalFilters: {
+      phase: 'all',
+      perspective: 'team_kills',
+      subject: 'killer',
+      include_post_round: true,
+      include_ability: true,
+    },
+    objects: [
+      {
+        id: 'obj-a',
+        teamSlug: 'edward-gaming',
+        filters: {
+          phase: 'all',
+          perspective: 'team_kills',
+          subject: 'killer',
+          include_post_round: true,
+          include_ability: true,
+          tournamentIds: ['tournament-1'],
+          opponents: [],
+          matchIds: ['598950'],
+        },
+      },
+    ],
+  })
+  expect(dashboard.objects[0]?.heatmap.sampleCount).toBe(1)
+
+  await expect(
+    getMapDashboardFromStaticData('Pearl', {
+      globalFilters: {
+        phase: 'all',
+        perspective: 'team_kills',
+        subject: 'killer',
+        include_post_round: true,
+        include_ability: true,
+      },
+      objects: [
+        {
+          id: 'obj-a',
+          teamSlug: 'edward-gaming',
+          filters: {
+            phase: 'all',
+            perspective: 'team_kills',
+            subject: 'killer',
+            include_post_round: true,
+            include_ability: true,
+            tournamentIds: ['tournament-1'],
+            opponents: [],
+            matchIds: ['598948'],
+          },
+        },
+      ],
+    }),
+  ).rejects.toThrow('Team edward-gaming not found on this map.')
 })
 
 it('returns multi-object dashboard with isolated object results', async () => {
@@ -328,6 +457,7 @@ it('returns multi-object dashboard with isolated object results', async () => {
           subject: 'killer',
           include_post_round: true,
           include_ability: true,
+          tournamentIds: ['tournament-1'],
           opponents: ['t1'],
           matchIds: ['598950'],
         },
@@ -341,6 +471,7 @@ it('returns multi-object dashboard with isolated object results', async () => {
           subject: 'killer',
           include_post_round: true,
           include_ability: true,
+          tournamentIds: [],
           opponents: ['edward-gaming'],
           matchIds: [],
         },
@@ -384,6 +515,7 @@ it('returns relation links in all-kills perspective and uses links as heatmap co
           subject: 'killer',
           include_post_round: true,
           include_ability: true,
+          tournamentIds: ['tournament-1'],
           opponents: ['t1'],
           matchIds: ['598950'],
         },
@@ -421,6 +553,7 @@ it('applies heatmap time window filter to links in all-kills perspective', async
           subject: 'killer',
           include_post_round: true,
           include_ability: true,
+          tournamentIds: ['tournament-1'],
           opponents: ['t1'],
           matchIds: ['598950'],
         },
@@ -459,6 +592,7 @@ it('applies global constraints and returns empty reason on conflict', async () =
           include_ability: true,
           heatmap_time_min: 40,
           heatmap_time_max: 50,
+          tournamentIds: [],
           opponents: [],
           matchIds: [],
         },

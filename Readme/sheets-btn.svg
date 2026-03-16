@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="68" viewBox="0 0 340 68">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19232D" />
+      <stop offset="100%" stop-color="#0F151C" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#109D59" />
+      <stop offset="100%" stop-color="#28C477" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="4" y="4" width="332" height="60" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Card Background -->
+  <rect x="4" y="4" width="332" height="60" rx="10" fill="url(#bg)" filter="url(#shadow)" stroke="#2A343D" stroke-width="1"/>
+  
+  <!-- Left Accent Line -->
+  <rect x="4" y="4" width="6" height="60" fill="url(#highlight)" clip-path="url(#cardClip)"/>
+  
+  <!-- Google Sheets Icon -->
+  <g transform="translate(24, 18)">
+    <path d="M 18.66 0 L 2.66 0 C 1.2 0 0 1.2 0 2.66 L 0 29.33 C 0 30.8 1.2 32 2.66 32 L 24 32 C 25.46 32 26.66 30.8 26.66 29.33 L 26.66 8 L 18.66 0 Z" fill="#0F9D58"/>
+    <path d="M 18.66 0 L 18.66 8 L 26.66 8 Z" fill="#87CEAC"/>
+    <rect x="6" y="12" width="14.66" height="2.66" fill="#FFFFFF"/>
+    <rect x="6" y="18" width="14.66" height="2.66" fill="#FFFFFF"/>
+    <rect x="6" y="24" width="10.66" height="2.66" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Text Content -->
+  <text x="64" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF">查看实时数据更新进度</text>
+  <text x="64" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#8B949E">Google Sheets 在线文档</text>
+
+  <!-- Arrow -->
+  <path d="M 300 28 L 306 34 L 300 40" fill="none" stroke="#8B949E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

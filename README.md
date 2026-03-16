@@ -96,8 +96,11 @@
 数据按**赛事**为单位组织，每场比赛，以其中一盘（一张地图）的完整数据作为整体更新。
 您可以 Google Sheets 上看到当前的数据覆盖和更新进度。
 
-[![数据更新进度](https://img.shields.io/badge/📊%20查看实时数据更新进度-Google%20Sheets-109D59?style=for-the-badge&logo=googlesheets&logoColor=white)](https://docs.google.com/spreadsheets/d/1uotrOrg4iuZmTKsVPxlHY-4FX94ApqoigkdvaOez8Cw/edit?usp=sharing)
-
+<p align="center">
+  <a href="https://docs.google.com/spreadsheets/d/1uotrOrg4iuZmTKsVPxlHY-4FX94ApqoigkdvaOez8Cw/edit?usp=sharing">
+    <img src="Readme/sheets-btn.svg" alt="查看实时数据更新进度" width="340">
+  </a>
+</p>
 > 数据持续围绕 VCT CN 赛事更新中，请点击上方徽章查看最新进度。
 
 ---

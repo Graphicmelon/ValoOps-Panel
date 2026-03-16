@@ -3,6 +3,10 @@ const TEAM_SHORT_NAME_BY_SLUG: Record<string, string> = {
   'dragon-ranger-gaming': 'DRG',
   'edward-gaming': 'EDG',
   'bilibili-gaming': 'BLG',
+  'trace-esport': 'TE',
+  'trace-esports': 'TE',
+  'wolves-esport': 'WOL',
+  'wolves-esports': 'WOL',
 }
 
 const TEAM_SHORT_NAME_BY_NAME_KEY: Record<string, string> = {
@@ -10,18 +14,30 @@ const TEAM_SHORT_NAME_BY_NAME_KEY: Record<string, string> = {
   DRAGONRANGERGAMING: 'DRG',
   EDWARDGAMING: 'EDG',
   BILIBILIGAMING: 'BLG',
+  TRACEESPORT: 'TE',
+  TRACEESPORTS: 'TE',
+  WOLVESESPORT: 'WOL',
+  WOLVESESPORTS: 'WOL',
 }
 
 const TEAM_SHORT_NAME_BY_SLUG_PART: Array<[string, string]> = [
   ['dragon-ranger', 'DRG'],
   ['edward-gaming', 'EDG'],
   ['bilibili-gaming', 'BLG'],
+  ['trace-esport', 'TE'],
+  ['trace-esports', 'TE'],
+  ['wolves-esport', 'WOL'],
+  ['wolves-esports', 'WOL'],
 ]
 
 const TEAM_SHORT_NAME_BY_NAME_PART: Array<[string, string]> = [
   ['dragon ranger', 'DRG'],
   ['edward gaming', 'EDG'],
   ['bilibili gaming', 'BLG'],
+  ['trace esport', 'TE'],
+  ['trace esports', 'TE'],
+  ['wolves esport', 'WOL'],
+  ['wolves esports', 'WOL'],
 ]
 
 function toNameKey(name: string) {
