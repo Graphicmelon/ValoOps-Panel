@@ -8,16 +8,13 @@
       <stop offset="0%" stop-color="#109D59" />
       <stop offset="100%" stop-color="#28C477" />
     </linearGradient>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
-    </filter>
     <clipPath id="cardClip">
       <rect x="4" y="4" width="332" height="60" rx="10"/>
     </clipPath>
   </defs>
 
   <!-- Card Background -->
-  <rect x="4" y="4" width="332" height="60" rx="10" fill="url(#bg)" filter="url(#shadow)" stroke="#2A343D" stroke-width="1"/>
+  <rect x="4" y="4" width="332" height="60" rx="10" fill="url(#bg)" stroke="#2A343D" stroke-width="1"/>
   
   <!-- Left Accent Line -->
   <rect x="4" y="4" width="6" height="60" fill="url(#highlight)" clip-path="url(#cardClip)"/>
