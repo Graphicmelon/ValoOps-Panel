@@ -7,6 +7,7 @@ const TEAM_SHORT_NAME_BY_SLUG: Record<string, string> = {
   'trace-esports': 'TE',
   'wolves-esport': 'WOL',
   'wolves-esports': 'WOL',
+  'xi-lai-gaming': 'XLG',
 }
 
 const TEAM_SHORT_NAME_BY_NAME_KEY: Record<string, string> = {
@@ -18,6 +19,7 @@ const TEAM_SHORT_NAME_BY_NAME_KEY: Record<string, string> = {
   TRACEESPORTS: 'TE',
   WOLVESESPORT: 'WOL',
   WOLVESESPORTS: 'WOL',
+  XILAIGAMING: 'XLG',
 }
 
 const TEAM_SHORT_NAME_BY_SLUG_PART: Array<[string, string]> = [
@@ -28,6 +30,7 @@ const TEAM_SHORT_NAME_BY_SLUG_PART: Array<[string, string]> = [
   ['trace-esports', 'TE'],
   ['wolves-esport', 'WOL'],
   ['wolves-esports', 'WOL'],
+  ['xi-lai-gaming', 'XLG'],
 ]
 
 const TEAM_SHORT_NAME_BY_NAME_PART: Array<[string, string]> = [
@@ -38,6 +41,7 @@ const TEAM_SHORT_NAME_BY_NAME_PART: Array<[string, string]> = [
   ['trace esports', 'TE'],
   ['wolves esport', 'WOL'],
   ['wolves esports', 'WOL'],
+  ['xi lai gaming', 'XLG'],
 ]
 
 function toNameKey(name: string) {

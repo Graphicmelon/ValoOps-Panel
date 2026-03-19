@@ -1,7 +1,14 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-03-17T11:49:16.718874Z",
+  "generatedAt": "2026-03-19T07:01:50.148196Z",
   "maps": [
+    {
+      "mapName": "Pearl",
+      "sampleCount": 8,
+      "teamCount": 6,
+      "lastUpdatedAt": "2026-03-17T12:38:24.792015+00:00",
+      "shard": "maps/pearl.json"
+    },
     {
       "mapName": "Split",
       "sampleCount": 8,
@@ -10,11 +17,11 @@
       "shard": "maps/split.json"
     },
     {
-      "mapName": "Pearl",
+      "mapName": "Haven",
       "sampleCount": 6,
-      "teamCount": 4,
-      "lastUpdatedAt": "2026-03-16T09:20:19.972888+00:00",
-      "shard": "maps/pearl.json"
+      "teamCount": 6,
+      "lastUpdatedAt": "2026-03-17T12:30:05.183963+00:00",
+      "shard": "maps/haven.json"
     },
     {
       "mapName": "Bind",
@@ -22,13 +29,6 @@
       "teamCount": 4,
       "lastUpdatedAt": "2026-03-16T09:00:19.203844+00:00",
       "shard": "maps/bind.json"
-    },
-    {
-      "mapName": "Haven",
-      "sampleCount": 4,
-      "teamCount": 4,
-      "lastUpdatedAt": "2026-03-15T12:34:22.464781+00:00",
-      "shard": "maps/haven.json"
     },
     {
       "mapName": "Abyss",

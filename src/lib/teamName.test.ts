@@ -14,4 +14,9 @@ describe('getTeamDisplayName', () => {
     expect(getTeamDisplayName('Wolves Esport', 'wolves-esport')).toBe('WOL')
     expect(getTeamDisplayName('Wolves Esports')).toBe('WOL')
   })
+
+  it('returns XLG for Xi Lai Gaming', () => {
+    expect(getTeamDisplayName('Xi Lai Gaming', 'xi-lai-gaming')).toBe('XLG')
+    expect(getTeamDisplayName('Xi Lai Gaming')).toBe('XLG')
+  })
 })
