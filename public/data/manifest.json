@@ -1,33 +1,33 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-03-19T12:48:39.388955Z",
+  "generatedAt": "2026-03-21T10:59:28.170250Z",
   "maps": [
     {
       "mapName": "Pearl",
-      "sampleCount": 8,
-      "teamCount": 6,
-      "lastUpdatedAt": "2026-03-17T12:38:24.792015+00:00",
+      "sampleCount": 10,
+      "teamCount": 7,
+      "lastUpdatedAt": "2026-03-20T03:44:51.016144+00:00",
       "shard": "maps/pearl.json"
     },
     {
       "mapName": "Split",
-      "sampleCount": 8,
-      "teamCount": 6,
-      "lastUpdatedAt": "2026-03-16T09:26:29.176386+00:00",
+      "sampleCount": 10,
+      "teamCount": 7,
+      "lastUpdatedAt": "2026-03-20T03:54:22.557388+00:00",
       "shard": "maps/split.json"
     },
     {
       "mapName": "Haven",
-      "sampleCount": 6,
-      "teamCount": 6,
-      "lastUpdatedAt": "2026-03-17T12:30:05.183963+00:00",
+      "sampleCount": 8,
+      "teamCount": 8,
+      "lastUpdatedAt": "2026-03-20T04:12:32.100402+00:00",
       "shard": "maps/haven.json"
     },
     {
       "mapName": "Bind",
-      "sampleCount": 4,
-      "teamCount": 4,
-      "lastUpdatedAt": "2026-03-16T09:00:19.203844+00:00",
+      "sampleCount": 6,
+      "teamCount": 5,
+      "lastUpdatedAt": "2026-03-20T04:03:03.854122+00:00",
       "shard": "maps/bind.json"
     },
     {

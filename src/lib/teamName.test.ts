@@ -19,4 +19,16 @@ describe('getTeamDisplayName', () => {
     expect(getTeamDisplayName('Xi Lai Gaming', 'xi-lai-gaming')).toBe('XLG')
     expect(getTeamDisplayName('Xi Lai Gaming')).toBe('XLG')
   })
+
+  it('returns NOVA for Nova Esport(s)', () => {
+    expect(getTeamDisplayName('Nova Esports', 'nova-esports')).toBe('NOVA')
+    expect(getTeamDisplayName('Nova Esport', 'nova-esport')).toBe('NOVA')
+    expect(getTeamDisplayName('Nova Esports')).toBe('NOVA')
+  })
+
+  it('returns TYL for Tyloo', () => {
+    expect(getTeamDisplayName('TYLOO', 'tyloo')).toBe('TYL')
+    expect(getTeamDisplayName('Tyloo', 'tyloo')).toBe('TYL')
+    expect(getTeamDisplayName('Tyloo')).toBe('TYL')
+  })
 })
