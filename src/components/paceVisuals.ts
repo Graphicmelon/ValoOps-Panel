@@ -1,6 +1,6 @@
 export type PacePlantSite = 'A' | 'B' | 'C'
 
-type PacePlantLegendItem = {
+export type PacePlantPatternItem = {
   site: PacePlantSite
   label: string
 }
@@ -13,35 +13,35 @@ type PaceLineLegendItem = {
 export const PACE_PLANT_BAR_COLOR = '#7dd3fc'
 export const PACE_UNKNOWN_BAR_COLOR = '#94a3b8'
 
-export const PACE_PLANT_LEGEND_ITEMS: PacePlantLegendItem[] = [
-  { site: 'A', label: 'A 点下包' },
-  { site: 'B', label: 'B 点下包' },
-  { site: 'C', label: 'C 点下包' },
+export const PACE_PLANT_PATTERN_ITEMS: PacePlantPatternItem[] = [
+  { site: 'A', label: 'A Site' },
+  { site: 'B', label: 'B Site' },
+  { site: 'C', label: 'C Site' },
 ]
 
 export const PACE_LINE_LEGEND_ITEMS: PaceLineLegendItem[] = [
-  { key: 'kills', label: '击杀（实线）' },
-  { key: 'deaths', label: '死亡（虚线）' },
+  { key: 'kills', label: '击杀' },
+  { key: 'deaths', label: '死亡' },
 ]
 
 function createPacePlantDecal(site: PacePlantSite) {
   if (site === 'A') {
     return {
       symbol: 'rect' as const,
-      symbolSize: 1,
+      symbolSize: 1.6,
       dashArrayX: [1, 0],
-      dashArrayY: [4, 3],
+      dashArrayY: [5, 4],
       rotation: -Math.PI / 4,
-      color: 'rgba(15, 23, 42, 0.42)',
+      color: 'rgba(15, 23, 42, 0.5)',
     }
   }
   if (site === 'B') {
     return {
-      symbol: 'circle' as const,
-      symbolSize: 2,
-      dashArrayX: [1, 5],
-      dashArrayY: [1, 5],
-      color: 'rgba(15, 23, 42, 0.42)',
+      symbol: 'rect' as const,
+      symbolSize: 1.1,
+      dashArrayX: [9, 5],
+      dashArrayY: [3, 4],
+      color: 'rgba(15, 23, 42, 0.52)',
     }
   }
   return {

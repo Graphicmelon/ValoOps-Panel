@@ -1,11 +1,15 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-03-23T06:19:28.750336Z",
+  "generatedAt": "2026-03-23T12:41:27.812486Z",
   "mapName": "Breeze",
   "teams": [
     {
       "slug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
       "name": "Guangzhou Huadu Bilibili Gaming (Bilibili Gaming)"
+    },
+    {
+      "slug": "wolves-esports",
+      "name": "Wolves Esports"
     },
     {
       "slug": "xi-lai-gaming",
@@ -14,7 +18,33 @@
   ],
   "samples": [
     {
-      "id": 17,
+      "id": 1,
+      "mapName": "Breeze",
+      "matchId": "598927",
+      "tournamentId": "18620ba560da454cad3ac9a29e56ad4c",
+      "tournamentName": "VCT 2026: China Kickoff",
+      "teamSlug": "xi-lai-gaming",
+      "teamName": "Xi Lai Gaming",
+      "opponentSlug": "wolves-esports",
+      "opponentName": "Wolves Esports",
+      "matchDateCode": "260124",
+      "sourceUpdatedAt": "2026-03-23T10:39:01.024849+00:00"
+    },
+    {
+      "id": 2,
+      "mapName": "Breeze",
+      "matchId": "598927",
+      "tournamentId": "18620ba560da454cad3ac9a29e56ad4c",
+      "tournamentName": "VCT 2026: China Kickoff",
+      "teamSlug": "wolves-esports",
+      "teamName": "Wolves Esports",
+      "opponentSlug": "xi-lai-gaming",
+      "opponentName": "Xi Lai Gaming",
+      "matchDateCode": "260124",
+      "sourceUpdatedAt": "2026-03-23T10:39:01.024849+00:00"
+    },
+    {
+      "id": 21,
       "mapName": "Breeze",
       "matchId": "598941",
       "tournamentId": "18620ba560da454cad3ac9a29e56ad4c",
@@ -27,7 +57,7 @@
       "sourceUpdatedAt": "2026-03-23T03:08:50.382387+00:00"
     },
     {
-      "id": 18,
+      "id": 22,
       "mapName": "Breeze",
       "matchId": "598941",
       "tournamentId": "18620ba560da454cad3ac9a29e56ad4c",
@@ -42,8 +72,26 @@
   ],
   "rounds": [
     {
-      "sampleId": 17,
+      "sampleId": 1,
       "roundNumber": 1,
+      "teamSide": "atk",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 38.5,
+      "plantTimeBucket": 6
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 44.5,
+      "plantTimeBucket": 5
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
       "teamSide": "atk",
       "plantSite": null,
       "plantingTeamSlug": null,
@@ -51,25 +99,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 17,
-      "roundNumber": 2,
-      "teamSide": "atk",
-      "plantSite": "A",
-      "plantingTeamSlug": "xi-lai-gaming",
-      "plantRemainingTimeSec": 76.5,
-      "plantTimeBucket": 2
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 3,
-      "teamSide": "atk",
-      "plantSite": "A",
-      "plantingTeamSlug": "xi-lai-gaming",
-      "plantRemainingTimeSec": 24.0,
-      "plantTimeBucket": 7
-    },
-    {
-      "sampleId": 17,
+      "sampleId": 1,
       "roundNumber": 4,
       "teamSide": "atk",
       "plantSite": null,
@@ -78,106 +108,106 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 17,
+      "sampleId": 1,
       "roundNumber": 5,
       "teamSide": "atk",
-      "plantSite": "A",
+      "plantSite": "B",
       "plantingTeamSlug": "xi-lai-gaming",
-      "plantRemainingTimeSec": 76.0,
-      "plantTimeBucket": 2
+      "plantRemainingTimeSec": 55.0,
+      "plantTimeBucket": 4
     },
     {
-      "sampleId": 17,
+      "sampleId": 1,
       "roundNumber": 6,
       "teamSide": "atk",
       "plantSite": "A",
       "plantingTeamSlug": "xi-lai-gaming",
-      "plantRemainingTimeSec": 27.5,
-      "plantTimeBucket": 7
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 7,
-      "teamSide": "atk",
-      "plantSite": null,
-      "plantingTeamSlug": null,
-      "plantRemainingTimeSec": null,
-      "plantTimeBucket": null
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 8,
-      "teamSide": "atk",
-      "plantSite": "A",
-      "plantingTeamSlug": "xi-lai-gaming",
-      "plantRemainingTimeSec": 7.5,
-      "plantTimeBucket": 9
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 9,
-      "teamSide": "atk",
-      "plantSite": null,
-      "plantingTeamSlug": null,
-      "plantRemainingTimeSec": null,
-      "plantTimeBucket": null
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 10,
-      "teamSide": "atk",
-      "plantSite": "B",
-      "plantingTeamSlug": "xi-lai-gaming",
-      "plantRemainingTimeSec": 14.5,
-      "plantTimeBucket": 8
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 11,
-      "teamSide": "atk",
-      "plantSite": null,
-      "plantingTeamSlug": null,
-      "plantRemainingTimeSec": null,
-      "plantTimeBucket": null
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 12,
-      "teamSide": "atk",
-      "plantSite": null,
-      "plantingTeamSlug": null,
-      "plantRemainingTimeSec": null,
-      "plantTimeBucket": null
-    },
-    {
-      "sampleId": 17,
-      "roundNumber": 13,
-      "teamSide": "def",
-      "plantSite": "B",
-      "plantingTeamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
-      "plantRemainingTimeSec": 68.5,
+      "plantRemainingTimeSec": 64.5,
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 17,
-      "roundNumber": 14,
-      "teamSide": "def",
-      "plantSite": "A",
-      "plantingTeamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
       "plantRemainingTimeSec": 40.0,
       "plantTimeBucket": 5
     },
     {
-      "sampleId": 17,
-      "roundNumber": 15,
-      "teamSide": "def",
-      "plantSite": "B",
-      "plantingTeamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
-      "plantRemainingTimeSec": 7.5,
-      "plantTimeBucket": 9
+      "sampleId": 1,
+      "roundNumber": 8,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 34.5,
+      "plantTimeBucket": 6
     },
     {
-      "sampleId": 17,
+      "sampleId": 1,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 70.5,
+      "plantTimeBucket": 2
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 70.5,
+      "plantTimeBucket": 2
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 21.5,
+      "plantTimeBucket": 7
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 15,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 1,
       "roundNumber": 16,
       "teamSide": "def",
       "plantSite": null,
@@ -186,7 +216,313 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 17,
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 38.5,
+      "plantTimeBucket": 6
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 44.5,
+      "plantTimeBucket": 5
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 55.0,
+      "plantTimeBucket": 4
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 64.5,
+      "plantTimeBucket": 3
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 40.0,
+      "plantTimeBucket": 5
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 8,
+      "teamSide": "def",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 34.5,
+      "plantTimeBucket": 6
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 9,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 70.5,
+      "plantTimeBucket": 2
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 70.5,
+      "plantTimeBucket": 2
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 21.5,
+      "plantTimeBucket": 7
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 15,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 76.5,
+      "plantTimeBucket": 2
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 24.0,
+      "plantTimeBucket": 7
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 76.0,
+      "plantTimeBucket": 2
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 27.5,
+      "plantTimeBucket": 7
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 8,
+      "teamSide": "atk",
+      "plantSite": "A",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 7.5,
+      "plantTimeBucket": 9
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "plantSite": "B",
+      "plantingTeamSlug": "xi-lai-gaming",
+      "plantRemainingTimeSec": 14.5,
+      "plantTimeBucket": 8
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
+      "plantRemainingTimeSec": 68.5,
+      "plantTimeBucket": 3
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "plantSite": "A",
+      "plantingTeamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
+      "plantRemainingTimeSec": 40.0,
+      "plantTimeBucket": 5
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 15,
+      "teamSide": "def",
+      "plantSite": "B",
+      "plantingTeamSlug": "guangzhou-huadu-bilibili-gaming-bilibili-gaming",
+      "plantRemainingTimeSec": 7.5,
+      "plantTimeBucket": 9
+    },
+    {
+      "sampleId": 21,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "plantSite": null,
+      "plantingTeamSlug": null,
+      "plantRemainingTimeSec": null,
+      "plantTimeBucket": null
+    },
+    {
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "plantSite": "A",
@@ -195,7 +531,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "plantSite": null,
@@ -204,7 +540,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "plantSite": "A",
@@ -213,7 +549,7 @@
       "plantTimeBucket": 7
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "plantSite": "A",
@@ -222,7 +558,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "plantSite": null,
@@ -231,7 +567,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 22,
       "teamSide": "def",
       "plantSite": "B",
@@ -240,7 +576,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "plantSite": "B",
@@ -249,7 +585,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "plantSite": "A",
@@ -258,7 +594,7 @@
       "plantTimeBucket": 7
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "plantSite": "A",
@@ -267,7 +603,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "plantSite": "A",
@@ -276,7 +612,7 @@
       "plantTimeBucket": 8
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "plantSite": null,
@@ -285,7 +621,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "plantSite": "A",
@@ -294,7 +630,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "plantSite": "A",
@@ -303,7 +639,7 @@
       "plantTimeBucket": 7
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 4,
       "teamSide": "def",
       "plantSite": null,
@@ -312,7 +648,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "plantSite": "A",
@@ -321,7 +657,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 6,
       "teamSide": "def",
       "plantSite": "A",
@@ -330,7 +666,7 @@
       "plantTimeBucket": 7
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 7,
       "teamSide": "def",
       "plantSite": null,
@@ -339,7 +675,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "plantSite": "A",
@@ -348,7 +684,7 @@
       "plantTimeBucket": 9
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "plantSite": null,
@@ -357,7 +693,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "plantSite": "B",
@@ -366,7 +702,7 @@
       "plantTimeBucket": 8
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "plantSite": null,
@@ -375,7 +711,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "plantSite": null,
@@ -384,7 +720,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "plantSite": "B",
@@ -393,7 +729,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "plantSite": "A",
@@ -402,7 +738,7 @@
       "plantTimeBucket": 5
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "plantSite": "B",
@@ -411,7 +747,7 @@
       "plantTimeBucket": 9
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 16,
       "teamSide": "atk",
       "plantSite": null,
@@ -420,7 +756,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "plantSite": "A",
@@ -429,7 +765,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "plantSite": null,
@@ -438,7 +774,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "plantSite": "A",
@@ -447,7 +783,7 @@
       "plantTimeBucket": 7
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "plantSite": "A",
@@ -456,7 +792,7 @@
       "plantTimeBucket": 4
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "plantSite": null,
@@ -465,7 +801,7 @@
       "plantTimeBucket": null
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 22,
       "teamSide": "atk",
       "plantSite": "B",
@@ -474,7 +810,7 @@
       "plantTimeBucket": 2
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "plantSite": "B",
@@ -483,7 +819,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "plantSite": "A",
@@ -492,7 +828,7 @@
       "plantTimeBucket": 7
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "plantSite": "A",
@@ -501,7 +837,7 @@
       "plantTimeBucket": 3
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "plantSite": "A",
@@ -512,7 +848,3559 @@
   ],
   "kills": [
     {
-      "sampleId": 17,
+      "sampleId": 1,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 86.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.27382320531097365,
+      "killerY": 0.39576879215449834,
+      "victimX": 0.2344518446658499,
+      "victimY": 0.5380452780383185,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.15365832258109963,
+      "killerY": 0.4123423439832826,
+      "victimX": 0.07283929939224508,
+      "victimY": 0.30137153604108435,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.16103124987997852,
+      "killerY": 0.40255369617773484,
+      "victimX": 0.06778112249922738,
+      "victimY": 0.3947012425023134,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 43.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1808155824367285,
+      "killerY": 0.2749787519965416,
+      "victimX": 0.35963085500145986,
+      "victimY": 0.2907225592316705,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 33.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09004946361753129,
+      "killerY": 0.28182274146969216,
+      "victimX": 0.27893521291241413,
+      "victimY": 0.17744286462979986,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 1,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 30.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09500192301528605,
+      "killerY": 0.2523876115135184,
+      "victimX": 0.1759088017270808,
+      "victimY": 0.27740496813075405,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 21.5,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.46241989533341293,
+      "killerY": 0.20308362760441873,
+      "victimX": 0.4354213880675533,
+      "victimY": 0.41132564807108796,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 20.5,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4673100301868961,
+      "killerY": 0.20066357175024158,
+      "victimX": 0.4378814261359007,
+      "victimY": 0.3843536289281374,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 19.5,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.43541648494950197,
+      "killerY": 0.4211393943413646,
+      "victimX": 0.4697554716768337,
+      "victimY": 0.19822867391482124,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 17.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.41588773236526333,
+      "killerY": 0.3351814417119517,
+      "victimX": 0.4549829825663657,
+      "victimY": 0.43595882637332073,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 15.5,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.43784156492162646,
+      "killerY": 0.4653202395685162,
+      "victimX": 0.43545815230231594,
+      "victimY": 0.337740866306043,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 14.5,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.43059076644387356,
+      "killerY": 0.28867441910532704,
+      "victimX": 0.43784156492162646,
+      "victimY": 0.4653202395685162,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 2,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 2.5,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.5307785347020558,
+      "killerY": 0.5222005773150101,
+      "victimX": 0.4475875197411214,
+      "victimY": 0.5561907668367344,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 63.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14416366396354,
+      "killerY": 0.17905709334726252,
+      "victimX": 0.19055574456907753,
+      "victimY": 0.32903754605523605,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 63.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.08752371246312593,
+      "killerY": 0.32847102310071147,
+      "victimX": 0.15131742375407847,
+      "victimY": 0.3288217936432499,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 62.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.06042291390470097,
+      "killerY": 0.38974806321045924,
+      "victimX": 0.05826696902815374,
+      "victimY": 0.20552413433648983,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 61.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.09243230364948365,
+      "killerY": 0.3284980130525217,
+      "victimX": 0.10709854994314491,
+      "victimY": 0.36787996717102667,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 60.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.0924248199584468,
+      "killerY": 0.3334104777070082,
+      "victimX": 0.146287790602369,
+      "victimY": 0.4196753408143452,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 58.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.0923387417363148,
+      "killerY": 0.3899141764382645,
+      "victimX": 0.1022341154879684,
+      "victimY": 0.3383766027285119,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 23.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.10719666061917259,
+      "killerY": 0.3015648904690761,
+      "victimX": 0.19317275238528636,
+      "victimY": 0.19407939197037172,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 3,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.06793410448408833,
+      "killerY": 0.29888783925081064,
+      "victimX": 0.16113485963378996,
+      "victimY": 0.323965027384976,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 92.0,
+      "timeBucket": 0,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.3840279192532043,
+      "killerY": 0.40860903455084313,
+      "victimX": 0.24683070383021288,
+      "victimY": 0.42755181370100254,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 63.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.848177985718521,
+      "killerY": 0.5065047152300374,
+      "victimX": 0.8969718234974322,
+      "victimY": 0.5630758244042634,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 62.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.8432776915989407,
+      "killerY": 0.4721862358397852,
+      "victimX": 0.8530534540487256,
+      "victimY": 0.5065274538549189,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 61.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9480038578558939,
+      "killerY": 0.4335252117084084,
+      "victimX": 0.8823423132876882,
+      "victimY": 0.5556608028311791,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8847919945335294,
+      "killerY": 0.5703733000723341,
+      "victimX": 0.7871399324777781,
+      "victimY": 0.3690427195897721,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 4,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.652964958945532,
+      "killerY": 0.45900938134994307,
+      "victimX": 0.9042805424027547,
+      "victimY": 0.5606579064615325,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 91.0,
+      "timeBucket": 0,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3129999281732501,
+      "killerY": 0.42297448842562735,
+      "victimX": 0.4134160587034099,
+      "victimY": 0.3793190327058099,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 89.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.41350616077415997,
+      "killerY": 0.21993974277979034,
+      "victimX": 0.5405521847174769,
+      "victimY": 0.5615099563979854,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 57.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1293539187497212,
+      "killerY": 0.24767973714834565,
+      "victimX": 0.2716347763537791,
+      "victimY": 0.13081801244886135,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 55.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14659885315337481,
+      "killerY": 0.19133963205525226,
+      "victimX": 0.15387225389298892,
+      "victimY": 0.2527327480112488,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 52.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.09264923527331548,
+      "killerY": 0.1860991714560953,
+      "victimX": 0.04344266559299266,
+      "victimY": 0.2643641810508454,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 29.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14657879739273588,
+      "killerY": 0.20606157883213844,
+      "victimX": 0.25430957934379544,
+      "victimY": 0.30730071637771306,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 5,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 26.5,
+      "timeBucket": 7,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14408972686114024,
+      "killerY": 0.23304056895003825,
+      "victimX": 0.06547947785789048,
+      "victimY": 0.2988739964058504,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 80.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9237244498759579,
+      "killerY": 0.509306065444324,
+      "victimX": 0.91634736473193,
+      "victimY": 0.4358144242983415,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 60.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7994481073296982,
+      "killerY": 0.570001368849318,
+      "victimX": 0.8748709843209161,
+      "victimY": 0.3597196899572969,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 59.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5918960958831121,
+      "killerY": 0.4709724326792308,
+      "victimX": 0.4328999245856874,
+      "victimY": 0.5585814313536854,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 50.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7310523073670628,
+      "killerY": 0.3858898409882694,
+      "victimX": 0.7676166855223082,
+      "victimY": 0.33710716268843927,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 49.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.6676155949524206,
+      "killerY": 0.4566296787720044,
+      "victimX": 0.7945313654505666,
+      "victimY": 0.5038040197274996,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8287002386039088,
+      "killerY": 0.5456202209365153,
+      "victimX": 0.638311012190102,
+      "victimY": 0.451582921887474,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 6,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 47.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.755465000751345,
+      "killerY": 0.4276595919756247,
+      "victimX": 0.6798260048539113,
+      "victimY": 0.4689456640405924,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 91.0,
+      "timeBucket": 0,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.8653331879859711,
+      "killerY": 0.6242106275697377,
+      "victimX": 0.745793698613628,
+      "victimY": 0.6310792027001922,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 58.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.20053988894392089,
+      "killerY": 0.1818602416027064,
+      "victimX": 0.15604292308425133,
+      "victimY": 0.4639529395861022,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.30087659024421254,
+      "killerY": 0.2830290346121181,
+      "victimX": 0.26175259273283924,
+      "victimY": 0.2165725207528109,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.1317134557248912,
+      "killerY": 0.31398011523923863,
+      "victimX": 0.08765212777982652,
+      "victimY": 0.24497920438999804,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 33.5,
+      "timeBucket": 6,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.35962195183874135,
+      "killerY": 0.3029854753467108,
+      "victimX": 0.22496301445854566,
+      "victimY": 0.2531495286842427,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 26.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.08253478574032531,
+      "killerY": 0.38003451085314205,
+      "victimX": 0.22245668880482566,
+      "victimY": 0.3022135443826567,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 7,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 19.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.09992010844641808,
+      "killerY": 0.24505155955225338,
+      "victimX": 0.048295477540212545,
+      "victimY": 0.29877708738936076,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 8,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9139730109940016,
+      "killerY": 0.5019134334611303,
+      "victimX": 0.9309508288099584,
+      "victimY": 0.4260963260726517,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 8,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 42.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.6456358164212228,
+      "killerY": 0.4369107822274256,
+      "victimX": 0.7457487595339078,
+      "victimY": 0.5256368289054123,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 8,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 41.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.801880199800127,
+      "killerY": 0.557755627075107,
+      "victimX": 0.8700006274156562,
+      "victimY": 0.3621410324458744,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 77.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09744810744283826,
+      "killerY": 0.25731211392788433,
+      "victimX": 0.1710048829690016,
+      "victimY": 0.27737679409501764,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 49.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1881949331274351,
+      "killerY": 0.25538796703247346,
+      "victimX": 0.34739920894866605,
+      "victimY": 0.2808427021400634,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 48.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.06548341736327841,
+      "killerY": 0.29641793414252515,
+      "victimX": 0.07023639524938084,
+      "victimY": 0.3947139638140701,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 44.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1266603380124906,
+      "killerY": 0.41711882753772495,
+      "victimX": 0.1435041107637782,
+      "victimY": 0.6606146999135041,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 9,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 42.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.274097768746824,
+      "killerY": 0.11612747604614665,
+      "victimX": 0.4233392167506034,
+      "victimY": 0.1268976696848723,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 57.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.3938591237721219,
+      "killerY": 0.34487211018752256,
+      "victimX": 0.4623448599838529,
+      "victimY": 0.3820291751662073,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 56.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.44766934832906363,
+      "killerY": 0.37949932469696507,
+      "victimX": 0.39386065375853807,
+      "victimY": 0.3424192458433101,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 53.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3252499563127841,
+      "killerY": 0.4205815469261357,
+      "victimX": 0.40118001590588875,
+      "victimY": 0.3792546283655573,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 53.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3374964246541975,
+      "killerY": 0.4206435590526361,
+      "victimX": 0.41831682886484167,
+      "victimY": 0.36707974886798594,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 51.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.47460198290444794,
+      "killerY": 0.3085352898261456,
+      "victimX": 0.17102070302803543,
+      "victimY": 0.2651046356097605,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 10,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.36943308462122415,
+      "killerY": 0.27361245894130026,
+      "victimX": 0.5601226911168286,
+      "victimY": 0.4904422921575663,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 86.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.17542966158068707,
+      "killerY": 0.6533594265163298,
+      "victimX": 0.16845098521917337,
+      "victimY": 0.3559267365306793,
+      "isPostRoundKill": false,
+      "isAbilityKill": true
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 85.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.11711777935691435,
+      "killerY": 0.22797092636202804,
+      "victimX": 0.13889940823209695,
+      "victimY": 0.43929508151350916,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 83.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.2961289496357638,
+      "killerY": 0.11872184254503758,
+      "victimX": 0.10968647294323845,
+      "victimY": 0.27702450704447756,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.17094792115788696,
+      "killerY": 0.3215640105972227,
+      "victimX": 0.28389798016938705,
+      "victimY": 0.10883899157740565,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 62.5,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.21246351269339495,
+      "killerY": 0.4642266948841312,
+      "victimX": 0.23688278329859436,
+      "victimY": 0.5577179577631104,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 49.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.07285872603764387,
+      "killerY": 0.2890918357382588,
+      "victimX": 0.14895435623890765,
+      "victimY": 0.2625219626152649,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 11,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 46.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.13891981645723145,
+      "killerY": 0.42455210389571746,
+      "victimX": 0.2617251158269147,
+      "victimY": 0.2435528772339468,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 45.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9090333621239555,
+      "killerY": 0.4284336015122699,
+      "victimX": 0.9115593187691238,
+      "victimY": 0.5263945480676776,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 43.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8603624652815282,
+      "killerY": 0.5016621389728181,
+      "victimX": 0.789552206626545,
+      "victimY": 0.32253931711730915,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 37.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8676243190131965,
+      "killerY": 0.4380192013907479,
+      "victimX": 0.894417556055809,
+      "victimY": 0.42835993547076634,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 35.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9528301388145596,
+      "killerY": 0.39194581615543306,
+      "victimX": 0.8919602713357282,
+      "victimY": 0.403867147917123,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 26.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9261581007027799,
+      "killerY": 0.506868405538897,
+      "victimX": 0.9236822635564225,
+      "victimY": 0.46522915944362403,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 23.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.6798276933673305,
+      "killerY": 0.4762998018461127,
+      "victimX": 0.8382990381849661,
+      "victimY": 0.32525697134208764,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 15.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5039015558095016,
+      "killerY": 0.436203083546066,
+      "victimX": 0.5870084306387201,
+      "victimY": 0.48075891981670255,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 12,
+      "teamSide": "atk",
+      "phase": "post_plant",
+      "remainingTimeSec": 5.5,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8530900258791826,
+      "killerY": 0.5555312554978602,
+      "victimX": 0.6871526093979553,
+      "victimY": 0.47878636028451427,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 77.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3645365717131064,
+      "killerY": 0.27603642528472955,
+      "victimX": 0.3865312995225499,
+      "victimY": 0.3227569972173586,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.27887354447199414,
+      "killerY": 0.24120146539903523,
+      "victimX": 0.10460781285367186,
+      "victimY": 0.39243502371159855,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 41.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.2690884349374838,
+      "killerY": 0.2288797239973823,
+      "victimX": 0.2764099558675205,
+      "victimY": 0.2559041053685286,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 32.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09978738276532435,
+      "killerY": 0.3334507878421582,
+      "victimX": 0.09971730485396692,
+      "victimY": 0.38012474900112386,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.06287832355817549,
+      "killerY": 0.3897608429517611,
+      "victimX": 0.06787919793981281,
+      "victimY": 0.33327609008046244,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 13,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.06788312020962915,
+      "killerY": 0.33081955233901295,
+      "victimX": 0.08273690814435705,
+      "victimY": 0.24986050639442556,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 87.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.08758037416949924,
+      "killerY": 0.29163126723739263,
+      "victimX": 0.11701097559691961,
+      "victimY": 0.3016201229197326,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.05093259843667378,
+      "killerY": 0.18829601583386504,
+      "victimX": 0.06536126583168501,
+      "victimY": 0.3725726128676178,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.053370650272980026,
+      "killerY": 0.19812985707901587,
+      "victimX": 0.07516224565579933,
+      "victimY": 0.38491021291780875,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 75.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.08516421053059278,
+      "killerY": 0.26706171662367983,
+      "victimX": 0.24463396061910153,
+      "victimY": 0.18949075403784715,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 70.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.2445053850333859,
+      "killerY": 0.3096998962858831,
+      "victimX": 0.28132273334752206,
+      "victimY": 0.24121596796062272,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 70.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4550619645448301,
+      "killerY": 0.25694938255179567,
+      "victimX": 0.24450800994750427,
+      "victimY": 0.3072457859437351,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 14,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4501736951419692,
+      "killerY": 0.25201897697888204,
+      "victimX": 0.2200000618004903,
+      "victimY": 0.307108437303615,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 15,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3816673825329259,
+      "killerY": 0.2761350465749832,
+      "victimX": 0.42811148763273016,
+      "victimY": 0.35241565832887595,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 15,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 75.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3816641444675921,
+      "killerY": 0.2810391588734703,
+      "victimX": 0.38158802263140973,
+      "victimY": 0.39632714553395487,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 15,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 3.58,
+      "timeBucket": 9,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.6627299671604286,
+      "killerY": 0.4443494697173314,
+      "victimX": 0.7091186964177839,
+      "victimY": 0.4666364886984112,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 15,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 5.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4329559204666577,
+      "killerY": 0.4481180855711494,
+      "victimX": 0.5747888623469467,
+      "victimY": 0.4831532473174599,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 58.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.6236580822553737,
+      "killerY": 0.4833863403562513,
+      "victimX": 0.608999182408031,
+      "victimY": 0.45389055403191153,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 50.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.20733245648292958,
+      "killerY": 0.6559449497634651,
+      "victimX": 0.2687557212358725,
+      "victimY": 0.5627734063095624,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 16.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5772356801777276,
+      "killerY": 0.44637778864691896,
+      "victimX": 0.4941204718188343,
+      "victimY": 0.43370122335789385,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 14.87,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7554081348923057,
+      "killerY": 0.3027648429122052,
+      "victimX": 0.8872771689373106,
+      "victimY": 0.6267517392049122,
+      "isPostRoundKill": false,
+      "isAbilityKill": true
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 12.91,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.8189709265825172,
+      "killerY": 0.5847940363633899,
+      "victimX": 0.7994452329070718,
+      "victimY": 0.5650986550339999,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 12.91,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8017464349922954,
+      "killerY": 0.3323981859323614,
+      "victimX": 0.8457809965110566,
+      "victimY": 0.5628509263642246,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 12.91,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5796786811689808,
+      "killerY": 0.45619886885406,
+      "victimX": 0.43541525912512163,
+      "victimY": 0.4235929207126338,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 8.86,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8163648409315638,
+      "killerY": 0.32268800680487103,
+      "victimX": 0.8604001036464283,
+      "victimY": 0.5506627925140655,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 16,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7578613113525934,
+      "killerY": 0.33460529954140006,
+      "victimX": 0.7286126199224544,
+      "victimY": 0.385877057054,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 89.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8677501064948836,
+      "killerY": 0.597257612492284,
+      "victimX": 0.7506747015003759,
+      "victimY": 0.6286461984515176,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 80.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.7409376440263632,
+      "killerY": 0.6948488892948613,
+      "victimX": 0.7531101454201593,
+      "victimY": 0.6163926071902358,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 71.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9237314820078855,
+      "killerY": 0.5166533434570987,
+      "victimX": 0.8068003297699647,
+      "victimY": 0.6264228006876782,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 21.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.694472428471052,
+      "killerY": 0.4641143275889138,
+      "victimX": 0.7189007987571449,
+      "victimY": 0.5230624690748312,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 19.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7310598036600046,
+      "killerY": 0.40548703978693756,
+      "victimX": 0.6944811377182795,
+      "victimY": 0.49598142383009636,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 17.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.728644798750715,
+      "killerY": 0.4716327276672937,
+      "victimX": 0.7164183063310015,
+      "victimY": 0.40051184615575597,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 11.71,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7359110889571319,
+      "killerY": 0.3344848638608348,
+      "victimX": 0.7408609174965916,
+      "victimY": 0.5084553616625042,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 1,
+      "roundNumber": 17,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 11.21,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9285321834251142,
+      "killerY": 0.4432192596228968,
+      "victimX": 0.7236942115820764,
+      "victimY": 0.278104079304198,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 86.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.27382320531097365,
+      "killerY": 0.39576879215449834,
+      "victimX": 0.2344518446658499,
+      "victimY": 0.5380452780383185,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.15365832258109963,
+      "killerY": 0.4123423439832826,
+      "victimX": 0.07283929939224508,
+      "victimY": 0.30137153604108435,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.16103124987997852,
+      "killerY": 0.40255369617773484,
+      "victimX": 0.06778112249922738,
+      "victimY": 0.3947012425023134,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 43.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1808155824367285,
+      "killerY": 0.2749787519965416,
+      "victimX": 0.35963085500145986,
+      "victimY": 0.2907225592316705,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 33.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09004946361753129,
+      "killerY": 0.28182274146969216,
+      "victimX": 0.27893521291241413,
+      "victimY": 0.17744286462979986,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 1,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 30.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09500192301528605,
+      "killerY": 0.2523876115135184,
+      "victimX": 0.1759088017270808,
+      "victimY": 0.27740496813075405,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 21.5,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.46241989533341293,
+      "killerY": 0.20308362760441873,
+      "victimX": 0.4354213880675533,
+      "victimY": 0.41132564807108796,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 20.5,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4673100301868961,
+      "killerY": 0.20066357175024158,
+      "victimX": 0.4378814261359007,
+      "victimY": 0.3843536289281374,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 19.5,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.43541648494950197,
+      "killerY": 0.4211393943413646,
+      "victimX": 0.4697554716768337,
+      "victimY": 0.19822867391482124,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 17.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.41588773236526333,
+      "killerY": 0.3351814417119517,
+      "victimX": 0.4549829825663657,
+      "victimY": 0.43595882637332073,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 15.5,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.43784156492162646,
+      "killerY": 0.4653202395685162,
+      "victimX": 0.43545815230231594,
+      "victimY": 0.337740866306043,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 14.5,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.43059076644387356,
+      "killerY": 0.28867441910532704,
+      "victimX": 0.43784156492162646,
+      "victimY": 0.4653202395685162,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 2,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 2.5,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.5307785347020558,
+      "killerY": 0.5222005773150101,
+      "victimX": 0.4475875197411214,
+      "victimY": 0.5561907668367344,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 63.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14416366396354,
+      "killerY": 0.17905709334726252,
+      "victimX": 0.19055574456907753,
+      "victimY": 0.32903754605523605,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 63.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.08752371246312593,
+      "killerY": 0.32847102310071147,
+      "victimX": 0.15131742375407847,
+      "victimY": 0.3288217936432499,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 62.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.06042291390470097,
+      "killerY": 0.38974806321045924,
+      "victimX": 0.05826696902815374,
+      "victimY": 0.20552413433648983,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 61.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.09243230364948365,
+      "killerY": 0.3284980130525217,
+      "victimX": 0.10709854994314491,
+      "victimY": 0.36787996717102667,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 60.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.0924248199584468,
+      "killerY": 0.3334104777070082,
+      "victimX": 0.146287790602369,
+      "victimY": 0.4196753408143452,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 58.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.0923387417363148,
+      "killerY": 0.3899141764382645,
+      "victimX": 0.1022341154879684,
+      "victimY": 0.3383766027285119,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 23.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.10719666061917259,
+      "killerY": 0.3015648904690761,
+      "victimX": 0.19317275238528636,
+      "victimY": 0.19407939197037172,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 3,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.06793410448408833,
+      "killerY": 0.29888783925081064,
+      "victimX": 0.16113485963378996,
+      "victimY": 0.323965027384976,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 92.0,
+      "timeBucket": 0,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.3840279192532043,
+      "killerY": 0.40860903455084313,
+      "victimX": 0.24683070383021288,
+      "victimY": 0.42755181370100254,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 63.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.848177985718521,
+      "killerY": 0.5065047152300374,
+      "victimX": 0.8969718234974322,
+      "victimY": 0.5630758244042634,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 62.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.8432776915989407,
+      "killerY": 0.4721862358397852,
+      "victimX": 0.8530534540487256,
+      "victimY": 0.5065274538549189,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 61.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9480038578558939,
+      "killerY": 0.4335252117084084,
+      "victimX": 0.8823423132876882,
+      "victimY": 0.5556608028311791,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8847919945335294,
+      "killerY": 0.5703733000723341,
+      "victimX": 0.7871399324777781,
+      "victimY": 0.3690427195897721,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 4,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.652964958945532,
+      "killerY": 0.45900938134994307,
+      "victimX": 0.9042805424027547,
+      "victimY": 0.5606579064615325,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 91.0,
+      "timeBucket": 0,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3129999281732501,
+      "killerY": 0.42297448842562735,
+      "victimX": 0.4134160587034099,
+      "victimY": 0.3793190327058099,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 89.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.41350616077415997,
+      "killerY": 0.21993974277979034,
+      "victimX": 0.5405521847174769,
+      "victimY": 0.5615099563979854,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 57.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1293539187497212,
+      "killerY": 0.24767973714834565,
+      "victimX": 0.2716347763537791,
+      "victimY": 0.13081801244886135,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 55.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14659885315337481,
+      "killerY": 0.19133963205525226,
+      "victimX": 0.15387225389298892,
+      "victimY": 0.2527327480112488,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 52.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.09264923527331548,
+      "killerY": 0.1860991714560953,
+      "victimX": 0.04344266559299266,
+      "victimY": 0.2643641810508454,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 29.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14657879739273588,
+      "killerY": 0.20606157883213844,
+      "victimX": 0.25430957934379544,
+      "victimY": 0.30730071637771306,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 5,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 26.5,
+      "timeBucket": 7,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.14408972686114024,
+      "killerY": 0.23304056895003825,
+      "victimX": 0.06547947785789048,
+      "victimY": 0.2988739964058504,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 80.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9237244498759579,
+      "killerY": 0.509306065444324,
+      "victimX": 0.91634736473193,
+      "victimY": 0.4358144242983415,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 60.0,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7994481073296982,
+      "killerY": 0.570001368849318,
+      "victimX": 0.8748709843209161,
+      "victimY": 0.3597196899572969,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 59.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5918960958831121,
+      "killerY": 0.4709724326792308,
+      "victimX": 0.4328999245856874,
+      "victimY": 0.5585814313536854,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 50.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7310523073670628,
+      "killerY": 0.3858898409882694,
+      "victimX": 0.7676166855223082,
+      "victimY": 0.33710716268843927,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 49.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.6676155949524206,
+      "killerY": 0.4566296787720044,
+      "victimX": 0.7945313654505666,
+      "victimY": 0.5038040197274996,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8287002386039088,
+      "killerY": 0.5456202209365153,
+      "victimX": 0.638311012190102,
+      "victimY": 0.451582921887474,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 6,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 47.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.755465000751345,
+      "killerY": 0.4276595919756247,
+      "victimX": 0.6798260048539113,
+      "victimY": 0.4689456640405924,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 91.0,
+      "timeBucket": 0,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.8653331879859711,
+      "killerY": 0.6242106275697377,
+      "victimX": 0.745793698613628,
+      "victimY": 0.6310792027001922,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 58.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.20053988894392089,
+      "killerY": 0.1818602416027064,
+      "victimX": 0.15604292308425133,
+      "victimY": 0.4639529395861022,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.30087659024421254,
+      "killerY": 0.2830290346121181,
+      "victimX": 0.26175259273283924,
+      "victimY": 0.2165725207528109,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.1317134557248912,
+      "killerY": 0.31398011523923863,
+      "victimX": 0.08765212777982652,
+      "victimY": 0.24497920438999804,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 33.5,
+      "timeBucket": 6,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.35962195183874135,
+      "killerY": 0.3029854753467108,
+      "victimX": 0.22496301445854566,
+      "victimY": 0.2531495286842427,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 26.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.08253478574032531,
+      "killerY": 0.38003451085314205,
+      "victimX": 0.22245668880482566,
+      "victimY": 0.3022135443826567,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 7,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 19.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.09992010844641808,
+      "killerY": 0.24505155955225338,
+      "victimX": 0.048295477540212545,
+      "victimY": 0.29877708738936076,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 8,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 48.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9139730109940016,
+      "killerY": 0.5019134334611303,
+      "victimX": 0.9309508288099584,
+      "victimY": 0.4260963260726517,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 8,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 42.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.6456358164212228,
+      "killerY": 0.4369107822274256,
+      "victimX": 0.7457487595339078,
+      "victimY": 0.5256368289054123,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 8,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 41.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.801880199800127,
+      "killerY": 0.557755627075107,
+      "victimX": 0.8700006274156562,
+      "victimY": 0.3621410324458744,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 9,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 77.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09744810744283826,
+      "killerY": 0.25731211392788433,
+      "victimX": 0.1710048829690016,
+      "victimY": 0.27737679409501764,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 9,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 49.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1881949331274351,
+      "killerY": 0.25538796703247346,
+      "victimX": 0.34739920894866605,
+      "victimY": 0.2808427021400634,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 9,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 48.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.06548341736327841,
+      "killerY": 0.29641793414252515,
+      "victimX": 0.07023639524938084,
+      "victimY": 0.3947139638140701,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 9,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 44.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.1266603380124906,
+      "killerY": 0.41711882753772495,
+      "victimX": 0.1435041107637782,
+      "victimY": 0.6606146999135041,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 9,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 42.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.274097768746824,
+      "killerY": 0.11612747604614665,
+      "victimX": 0.4233392167506034,
+      "victimY": 0.1268976696848723,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 57.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.3938591237721219,
+      "killerY": 0.34487211018752256,
+      "victimX": 0.4623448599838529,
+      "victimY": 0.3820291751662073,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 56.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.44766934832906363,
+      "killerY": 0.37949932469696507,
+      "victimX": 0.39386065375853807,
+      "victimY": 0.3424192458433101,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 53.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3252499563127841,
+      "killerY": 0.4205815469261357,
+      "victimX": 0.40118001590588875,
+      "victimY": 0.3792546283655573,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 53.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3374964246541975,
+      "killerY": 0.4206435590526361,
+      "victimX": 0.41831682886484167,
+      "victimY": 0.36707974886798594,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 51.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.47460198290444794,
+      "killerY": 0.3085352898261456,
+      "victimX": 0.17102070302803543,
+      "victimY": 0.2651046356097605,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 10,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.36943308462122415,
+      "killerY": 0.27361245894130026,
+      "victimX": 0.5601226911168286,
+      "victimY": 0.4904422921575663,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 86.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.17542966158068707,
+      "killerY": 0.6533594265163298,
+      "victimX": 0.16845098521917337,
+      "victimY": 0.3559267365306793,
+      "isPostRoundKill": false,
+      "isAbilityKill": true
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 85.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.11711777935691435,
+      "killerY": 0.22797092636202804,
+      "victimX": 0.13889940823209695,
+      "victimY": 0.43929508151350916,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 83.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.2961289496357638,
+      "killerY": 0.11872184254503758,
+      "victimX": 0.10968647294323845,
+      "victimY": 0.27702450704447756,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.17094792115788696,
+      "killerY": 0.3215640105972227,
+      "victimX": 0.28389798016938705,
+      "victimY": 0.10883899157740565,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 62.5,
+      "timeBucket": 3,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.21246351269339495,
+      "killerY": 0.4642266948841312,
+      "victimX": 0.23688278329859436,
+      "victimY": 0.5577179577631104,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 49.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.07285872603764387,
+      "killerY": 0.2890918357382588,
+      "victimX": 0.14895435623890765,
+      "victimY": 0.2625219626152649,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 11,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 46.5,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.13891981645723145,
+      "killerY": 0.42455210389571746,
+      "victimX": 0.2617251158269147,
+      "victimY": 0.2435528772339468,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 45.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9090333621239555,
+      "killerY": 0.4284336015122699,
+      "victimX": 0.9115593187691238,
+      "victimY": 0.5263945480676776,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 43.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8603624652815282,
+      "killerY": 0.5016621389728181,
+      "victimX": 0.789552206626545,
+      "victimY": 0.32253931711730915,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 37.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8676243190131965,
+      "killerY": 0.4380192013907479,
+      "victimX": 0.894417556055809,
+      "victimY": 0.42835993547076634,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 35.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9528301388145596,
+      "killerY": 0.39194581615543306,
+      "victimX": 0.8919602713357282,
+      "victimY": 0.403867147917123,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 26.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9261581007027799,
+      "killerY": 0.506868405538897,
+      "victimX": 0.9236822635564225,
+      "victimY": 0.46522915944362403,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "pre_plant",
+      "remainingTimeSec": 23.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.6798276933673305,
+      "killerY": 0.4762998018461127,
+      "victimX": 0.8382990381849661,
+      "victimY": 0.32525697134208764,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 15.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5039015558095016,
+      "killerY": 0.436203083546066,
+      "victimX": 0.5870084306387201,
+      "victimY": 0.48075891981670255,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 12,
+      "teamSide": "def",
+      "phase": "post_plant",
+      "remainingTimeSec": 5.5,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8530900258791826,
+      "killerY": 0.5555312554978602,
+      "victimX": 0.6871526093979553,
+      "victimY": 0.47878636028451427,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 77.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3645365717131064,
+      "killerY": 0.27603642528472955,
+      "victimX": 0.3865312995225499,
+      "victimY": 0.3227569972173586,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 44.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.27887354447199414,
+      "killerY": 0.24120146539903523,
+      "victimX": 0.10460781285367186,
+      "victimY": 0.39243502371159855,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 41.0,
+      "timeBucket": 5,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.2690884349374838,
+      "killerY": 0.2288797239973823,
+      "victimX": 0.2764099558675205,
+      "victimY": 0.2559041053685286,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 32.0,
+      "timeBucket": 6,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.09978738276532435,
+      "killerY": 0.3334507878421582,
+      "victimX": 0.09971730485396692,
+      "victimY": 0.38012474900112386,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.06287832355817549,
+      "killerY": 0.3897608429517611,
+      "victimX": 0.06787919793981281,
+      "victimY": 0.33327609008046244,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 13,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.06788312020962915,
+      "killerY": 0.33081955233901295,
+      "victimX": 0.08273690814435705,
+      "victimY": 0.24986050639442556,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 87.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.08758037416949924,
+      "killerY": 0.29163126723739263,
+      "victimX": 0.11701097559691961,
+      "victimY": 0.3016201229197326,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.05093259843667378,
+      "killerY": 0.18829601583386504,
+      "victimX": 0.06536126583168501,
+      "victimY": 0.3725726128676178,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.053370650272980026,
+      "killerY": 0.19812985707901587,
+      "victimX": 0.07516224565579933,
+      "victimY": 0.38491021291780875,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 75.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.08516421053059278,
+      "killerY": 0.26706171662367983,
+      "victimX": 0.24463396061910153,
+      "victimY": 0.18949075403784715,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 70.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.2445053850333859,
+      "killerY": 0.3096998962858831,
+      "victimX": 0.28132273334752206,
+      "victimY": 0.24121596796062272,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 70.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4550619645448301,
+      "killerY": 0.25694938255179567,
+      "victimX": 0.24450800994750427,
+      "victimY": 0.3072457859437351,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 14,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4501736951419692,
+      "killerY": 0.25201897697888204,
+      "victimX": 0.2200000618004903,
+      "victimY": 0.307108437303615,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 15,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 76.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3816673825329259,
+      "killerY": 0.2761350465749832,
+      "victimX": 0.42811148763273016,
+      "victimY": 0.35241565832887595,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 15,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 75.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.3816641444675921,
+      "killerY": 0.2810391588734703,
+      "victimX": 0.38158802263140973,
+      "victimY": 0.39632714553395487,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 15,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 3.58,
+      "timeBucket": 9,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.6627299671604286,
+      "killerY": 0.4443494697173314,
+      "victimX": 0.7091186964177839,
+      "victimY": 0.4666364886984112,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 15,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 5.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.4329559204666577,
+      "killerY": 0.4481180855711494,
+      "victimX": 0.5747888623469467,
+      "victimY": 0.4831532473174599,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 58.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.6236580822553737,
+      "killerY": 0.4833863403562513,
+      "victimX": 0.608999182408031,
+      "victimY": 0.45389055403191153,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 50.0,
+      "timeBucket": 4,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.20733245648292958,
+      "killerY": 0.6559449497634651,
+      "victimX": 0.2687557212358725,
+      "victimY": 0.5627734063095624,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 16.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5772356801777276,
+      "killerY": 0.44637778864691896,
+      "victimX": 0.4941204718188343,
+      "victimY": 0.43370122335789385,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 14.87,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7554081348923057,
+      "killerY": 0.3027648429122052,
+      "victimX": 0.8872771689373106,
+      "victimY": 0.6267517392049122,
+      "isPostRoundKill": false,
+      "isAbilityKill": true
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 12.91,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.8189709265825172,
+      "killerY": 0.5847940363633899,
+      "victimX": 0.7994452329070718,
+      "victimY": 0.5650986550339999,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 12.91,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8017464349922954,
+      "killerY": 0.3323981859323614,
+      "victimX": 0.8457809965110566,
+      "victimY": 0.5628509263642246,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 12.91,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.5796786811689808,
+      "killerY": 0.45619886885406,
+      "victimX": 0.43541525912512163,
+      "victimY": 0.4235929207126338,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 8.86,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8163648409315638,
+      "killerY": 0.32268800680487103,
+      "victimX": 0.8604001036464283,
+      "victimY": 0.5506627925140655,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 16,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 6.0,
+      "timeBucket": 9,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7578613113525934,
+      "killerY": 0.33460529954140006,
+      "victimX": 0.7286126199224544,
+      "victimY": 0.385877057054,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 89.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.8677501064948836,
+      "killerY": 0.597257612492284,
+      "victimX": 0.7506747015003759,
+      "victimY": 0.6286461984515176,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 80.0,
+      "timeBucket": 1,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.7409376440263632,
+      "killerY": 0.6948488892948613,
+      "victimX": 0.7531101454201593,
+      "victimY": 0.6163926071902358,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 71.0,
+      "timeBucket": 2,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.9237314820078855,
+      "killerY": 0.5166533434570987,
+      "victimX": 0.8068003297699647,
+      "victimY": 0.6264228006876782,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 21.0,
+      "timeBucket": 7,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.694472428471052,
+      "killerY": 0.4641143275889138,
+      "victimX": 0.7189007987571449,
+      "victimY": 0.5230624690748312,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 19.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7310598036600046,
+      "killerY": 0.40548703978693756,
+      "victimX": 0.6944811377182795,
+      "victimY": 0.49598142383009636,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 17.0,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.728644798750715,
+      "killerY": 0.4716327276672937,
+      "victimX": 0.7164183063310015,
+      "victimY": 0.40051184615575597,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 11.71,
+      "timeBucket": 8,
+      "killerTeamSlug": "xi-lai-gaming",
+      "victimTeamSlug": "wolves-esports",
+      "killerX": 0.7359110889571319,
+      "killerY": 0.3344848638608348,
+      "victimX": 0.7408609174965916,
+      "victimY": 0.5084553616625042,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 2,
+      "roundNumber": 17,
+      "teamSide": "atk",
+      "phase": "pre_plant",
+      "remainingTimeSec": 11.21,
+      "timeBucket": 8,
+      "killerTeamSlug": "wolves-esports",
+      "victimTeamSlug": "xi-lai-gaming",
+      "killerX": 0.9285321834251142,
+      "killerY": 0.4432192596228968,
+      "victimX": 0.7236942115820764,
+      "victimY": 0.278104079304198,
+      "isPostRoundKill": false,
+      "isAbilityKill": false
+    },
+    {
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -528,7 +4416,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -544,7 +4432,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -560,7 +4448,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -576,7 +4464,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -592,7 +4480,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -608,7 +4496,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -624,7 +4512,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 1,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -640,7 +4528,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -656,7 +4544,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -672,7 +4560,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -688,7 +4576,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -704,7 +4592,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -720,7 +4608,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -736,7 +4624,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 2,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -752,7 +4640,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -768,7 +4656,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -784,7 +4672,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -800,7 +4688,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -816,7 +4704,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -832,7 +4720,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -848,7 +4736,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 3,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -864,7 +4752,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -880,7 +4768,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -896,7 +4784,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -912,7 +4800,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 4,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -928,7 +4816,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -944,7 +4832,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -960,7 +4848,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -976,7 +4864,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -992,7 +4880,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1008,7 +4896,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1024,7 +4912,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 5,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1040,7 +4928,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1056,7 +4944,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 6,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1072,7 +4960,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1088,7 +4976,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1104,7 +4992,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1120,7 +5008,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1136,7 +5024,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 7,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1152,7 +5040,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1168,7 +5056,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1184,7 +5072,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1200,7 +5088,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1216,7 +5104,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1232,7 +5120,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1248,7 +5136,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 8,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1264,7 +5152,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1280,7 +5168,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1296,7 +5184,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1312,7 +5200,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1328,7 +5216,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1344,7 +5232,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1360,7 +5248,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1376,7 +5264,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 9,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1392,7 +5280,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1408,7 +5296,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1424,7 +5312,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1440,7 +5328,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1456,7 +5344,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1472,7 +5360,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1488,7 +5376,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1504,7 +5392,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 10,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -1520,7 +5408,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1536,7 +5424,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1552,7 +5440,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1568,7 +5456,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1584,7 +5472,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1600,7 +5488,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1616,7 +5504,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1632,7 +5520,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 11,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1648,7 +5536,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1664,7 +5552,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1680,7 +5568,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1696,7 +5584,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1712,7 +5600,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1728,7 +5616,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 12,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -1744,7 +5632,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1760,7 +5648,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1776,7 +5664,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1792,7 +5680,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1808,7 +5696,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1824,7 +5712,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1840,7 +5728,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 13,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1856,7 +5744,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1872,7 +5760,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1888,7 +5776,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1904,7 +5792,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1920,7 +5808,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1936,7 +5824,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1952,7 +5840,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 14,
       "teamSide": "def",
       "phase": "post_plant",
@@ -1968,7 +5856,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -1984,7 +5872,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2000,7 +5888,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2016,7 +5904,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2032,7 +5920,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2048,7 +5936,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2064,7 +5952,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2080,7 +5968,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 15,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2096,7 +5984,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2112,7 +6000,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2128,7 +6016,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2144,7 +6032,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2160,7 +6048,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 16,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2176,7 +6064,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2192,7 +6080,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2208,7 +6096,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2224,7 +6112,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2240,7 +6128,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2256,7 +6144,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 17,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2272,7 +6160,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2288,7 +6176,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2304,7 +6192,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2320,7 +6208,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2336,7 +6224,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2352,7 +6240,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2368,7 +6256,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 18,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2384,7 +6272,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2400,7 +6288,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2416,7 +6304,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2432,7 +6320,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2448,7 +6336,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2464,7 +6352,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2480,7 +6368,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2496,7 +6384,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 19,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2512,7 +6400,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2528,7 +6416,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2544,7 +6432,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2560,7 +6448,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2576,7 +6464,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2592,7 +6480,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 20,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2608,7 +6496,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2624,7 +6512,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2640,7 +6528,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2656,7 +6544,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2672,7 +6560,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2688,7 +6576,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2704,7 +6592,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2720,7 +6608,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 21,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2736,7 +6624,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 22,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2752,7 +6640,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 22,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2768,7 +6656,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 22,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2784,7 +6672,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 22,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2800,7 +6688,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2816,7 +6704,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2832,7 +6720,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2848,7 +6736,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2864,7 +6752,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2880,7 +6768,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2896,7 +6784,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 23,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2912,7 +6800,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2928,7 +6816,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -2944,7 +6832,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2960,7 +6848,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2976,7 +6864,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "post_plant",
@@ -2992,7 +6880,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3008,7 +6896,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 24,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3024,7 +6912,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3040,7 +6928,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3056,7 +6944,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3072,7 +6960,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -3088,7 +6976,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3104,7 +6992,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3120,7 +7008,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3136,7 +7024,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 25,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -3152,7 +7040,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3168,7 +7056,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3184,7 +7072,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3200,7 +7088,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3216,7 +7104,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3232,7 +7120,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3248,7 +7136,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3264,7 +7152,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3280,7 +7168,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 17,
+      "sampleId": 21,
       "roundNumber": 26,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3296,7 +7184,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3312,7 +7200,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3328,7 +7216,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3344,7 +7232,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3360,7 +7248,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3376,7 +7264,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3392,7 +7280,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3408,7 +7296,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 1,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3424,7 +7312,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3440,7 +7328,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3456,7 +7344,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3472,7 +7360,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3488,7 +7376,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3504,7 +7392,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3520,7 +7408,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 2,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3536,7 +7424,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3552,7 +7440,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3568,7 +7456,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3584,7 +7472,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3600,7 +7488,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3616,7 +7504,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3632,7 +7520,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 3,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3648,7 +7536,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3664,7 +7552,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3680,7 +7568,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3696,7 +7584,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 4,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3712,7 +7600,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3728,7 +7616,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3744,7 +7632,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3760,7 +7648,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3776,7 +7664,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3792,7 +7680,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3808,7 +7696,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 5,
       "teamSide": "def",
       "phase": "post_plant",
@@ -3824,7 +7712,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3840,7 +7728,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 6,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3856,7 +7744,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3872,7 +7760,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3888,7 +7776,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3904,7 +7792,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3920,7 +7808,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 7,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3936,7 +7824,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3952,7 +7840,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3968,7 +7856,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -3984,7 +7872,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4000,7 +7888,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4016,7 +7904,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4032,7 +7920,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 8,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4048,7 +7936,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4064,7 +7952,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4080,7 +7968,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4096,7 +7984,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4112,7 +8000,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4128,7 +8016,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4144,7 +8032,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4160,7 +8048,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 9,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4176,7 +8064,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4192,7 +8080,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4208,7 +8096,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4224,7 +8112,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4240,7 +8128,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4256,7 +8144,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4272,7 +8160,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4288,7 +8176,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 10,
       "teamSide": "def",
       "phase": "post_plant",
@@ -4304,7 +8192,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4320,7 +8208,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4336,7 +8224,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4352,7 +8240,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4368,7 +8256,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4384,7 +8272,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4400,7 +8288,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4416,7 +8304,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 11,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4432,7 +8320,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4448,7 +8336,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4464,7 +8352,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4480,7 +8368,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4496,7 +8384,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4512,7 +8400,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 12,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -4528,7 +8416,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4544,7 +8432,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4560,7 +8448,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4576,7 +8464,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4592,7 +8480,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4608,7 +8496,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4624,7 +8512,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 13,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4640,7 +8528,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4656,7 +8544,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4672,7 +8560,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4688,7 +8576,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4704,7 +8592,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4720,7 +8608,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4736,7 +8624,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 14,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4752,7 +8640,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4768,7 +8656,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4784,7 +8672,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4800,7 +8688,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4816,7 +8704,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4832,7 +8720,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4848,7 +8736,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4864,7 +8752,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 15,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4880,7 +8768,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4896,7 +8784,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4912,7 +8800,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4928,7 +8816,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4944,7 +8832,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 16,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -4960,7 +8848,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4976,7 +8864,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -4992,7 +8880,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5008,7 +8896,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5024,7 +8912,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5040,7 +8928,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 17,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5056,7 +8944,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5072,7 +8960,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5088,7 +8976,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5104,7 +8992,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5120,7 +9008,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5136,7 +9024,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5152,7 +9040,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 18,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5168,7 +9056,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5184,7 +9072,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5200,7 +9088,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5216,7 +9104,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5232,7 +9120,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5248,7 +9136,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5264,7 +9152,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5280,7 +9168,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 19,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5296,7 +9184,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5312,7 +9200,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5328,7 +9216,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5344,7 +9232,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5360,7 +9248,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5376,7 +9264,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 20,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5392,7 +9280,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5408,7 +9296,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5424,7 +9312,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5440,7 +9328,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5456,7 +9344,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5472,7 +9360,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5488,7 +9376,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5504,7 +9392,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 21,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5520,7 +9408,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 22,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5536,7 +9424,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 22,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5552,7 +9440,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 22,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5568,7 +9456,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 22,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5584,7 +9472,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5600,7 +9488,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5616,7 +9504,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5632,7 +9520,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5648,7 +9536,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5664,7 +9552,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5680,7 +9568,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 23,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5696,7 +9584,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5712,7 +9600,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5728,7 +9616,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5744,7 +9632,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5760,7 +9648,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5776,7 +9664,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5792,7 +9680,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 24,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -5808,7 +9696,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -5824,7 +9712,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -5840,7 +9728,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -5856,7 +9744,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "pre_plant",
@@ -5872,7 +9760,7 @@
       "isAbilityKill": true
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "post_plant",
@@ -5888,7 +9776,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "post_plant",
@@ -5904,7 +9792,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "post_plant",
@@ -5920,7 +9808,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 25,
       "teamSide": "def",
       "phase": "post_plant",
@@ -5936,7 +9824,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5952,7 +9840,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5968,7 +9856,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -5984,7 +9872,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -6000,7 +9888,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -6016,7 +9904,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "pre_plant",
@@ -6032,7 +9920,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -6048,7 +9936,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "post_plant",
@@ -6064,7 +9952,7 @@
       "isAbilityKill": false
     },
     {
-      "sampleId": 18,
+      "sampleId": 22,
       "roundNumber": 26,
       "teamSide": "atk",
       "phase": "post_plant",

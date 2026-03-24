@@ -1,4 +1,5 @@
 const TEAM_SHORT_NAME_BY_SLUG: Record<string, string> = {
+  'all-gamers': 'AG',
   'dragon-ranger': 'DRG',
   'dragon-ranger-gaming': 'DRG',
   'edward-gaming': 'EDG',
@@ -14,6 +15,7 @@ const TEAM_SHORT_NAME_BY_SLUG: Record<string, string> = {
 }
 
 const TEAM_SHORT_NAME_BY_NAME_KEY: Record<string, string> = {
+  ALLGAMERS: 'AG',
   DRAGONRANGER: 'DRG',
   DRAGONRANGERGAMING: 'DRG',
   EDWARDGAMING: 'EDG',
@@ -29,6 +31,7 @@ const TEAM_SHORT_NAME_BY_NAME_KEY: Record<string, string> = {
 }
 
 const TEAM_SHORT_NAME_BY_SLUG_PART: Array<[string, string]> = [
+  ['all-gamers', 'AG'],
   ['dragon-ranger', 'DRG'],
   ['edward-gaming', 'EDG'],
   ['bilibili-gaming', 'BLG'],
@@ -43,6 +46,7 @@ const TEAM_SHORT_NAME_BY_SLUG_PART: Array<[string, string]> = [
 ]
 
 const TEAM_SHORT_NAME_BY_NAME_PART: Array<[string, string]> = [
+  ['all gamers', 'AG'],
   ['dragon ranger', 'DRG'],
   ['edward gaming', 'EDG'],
   ['bilibili gaming', 'BLG'],

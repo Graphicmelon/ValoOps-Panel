@@ -1,0 +1,18 @@
+.root {
+  width: 22px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #7dd3fc;
+}
+
+.chart {
+  width: 100%;
+  pointer-events: none;
+}
+
+.chartOffsetDown {
+  transform: translateY(1px);
+}

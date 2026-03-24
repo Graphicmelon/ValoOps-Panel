@@ -22,49 +22,6 @@
   color: var(--ink-secondary);
 }
 
-.patternSwatch {
-  width: 22px;
-  height: 12px;
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background-color: #7dd3fc;
-  background-repeat: repeat;
-  flex-shrink: 0;
-}
-
-.siteA {
-  background-image: repeating-linear-gradient(
-    -45deg,
-    rgba(15, 23, 42, 0.42) 0,
-    rgba(15, 23, 42, 0.42) 2px,
-    transparent 2px,
-    transparent 6px
-  );
-}
-
-.siteB {
-  background-image: radial-gradient(rgba(15, 23, 42, 0.44) 1.2px, transparent 1.2px);
-  background-size: 6px 6px;
-}
-
-.siteC {
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      rgba(15, 23, 42, 0.35) 0,
-      rgba(15, 23, 42, 0.35) 1px,
-      transparent 1px,
-      transparent 6px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      rgba(15, 23, 42, 0.35) 0,
-      rgba(15, 23, 42, 0.35) 1px,
-      transparent 1px,
-      transparent 6px
-    );
-}
-
 .lineSample {
   width: 24px;
   height: 0;
@@ -78,7 +35,7 @@
 
 .lineDashed {
   border-top-style: dashed;
-  border-top-color: #fca5a5;
+  border-top-color: #67e8f9;
 }
 
 @media (max-width: 840px) {

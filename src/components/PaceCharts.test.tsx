@@ -100,7 +100,19 @@ function buildDashboardObject(id: string, slug: string, name: string): Dashboard
 }
 
 function latestOption() {
-  return setOptionMock.mock.calls[setOptionMock.mock.calls.length - 1]?.[0] as {
+  const option = [...setOptionMock.mock.calls]
+    .map((call) => call[0] as { xAxis?: { data?: unknown } })
+    .reverse()
+    .find((current) => {
+      const data = current?.xAxis?.data
+      return Array.isArray(data) && data.length === 10
+    })
+
+  if (!option) {
+    throw new Error('Expected a main pace chart option to be set.')
+  }
+
+  return option as {
     yAxis?: { name?: string; max?: number } | Array<{ name?: string; max?: number }>
     series?: Array<{
       name?: string
@@ -193,22 +205,25 @@ it('builds combined series and supports independent visibility toggles', async (
   expect(initialSeriesNames).toContain('T1 击杀')
   expect(initialSeriesNames).toContain('EDG A 点下包')
 
-  const edgPlantSeries = (latestOption().series ?? []).find((series) => series.name === 'EDG A 点下包')
+  const edgPlantSeries = (latestOption().series ?? []).find(
+    (series) => series.name === 'EDG A 点下包',
+  )
   expect(edgPlantSeries?.itemStyle?.decal).toBeTruthy()
   expect(edgPlantSeries?.yAxisIndex).toBe(0)
 
   const countAxis = latestOption().yAxis
   expect(Array.isArray(countAxis)).toBe(true)
   if (!Array.isArray(countAxis)) throw new Error('Expected dual yAxis in count mode')
-  expect(screen.getByText('击杀（实线）')).toBeInTheDocument()
-  expect(screen.getByText('死亡（虚线）')).toBeInTheDocument()
+  expect(screen.getByText('A Site')).toBeInTheDocument()
+  expect(screen.getByText('B Site')).toBeInTheDocument()
+  expect(screen.getByText('C Site')).toBeInTheDocument()
+  expect(screen.getByText('击杀')).toBeInTheDocument()
+  expect(screen.getByText('死亡')).toBeInTheDocument()
 
   fireEvent.click(screen.getByRole('button', { name: 'T1' }))
 
   await waitFor(() => {
-    const seriesNames = (latestOption().series ?? [])
-      .map((series) => series.name ?? '')
-      .join('|')
+    const seriesNames = (latestOption().series ?? []).map((series) => series.name ?? '').join('|')
     expect(seriesNames).not.toContain('T1 击杀')
   })
 })

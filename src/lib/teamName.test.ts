@@ -3,6 +3,11 @@ import { describe, expect, it } from 'vitest'
 import { getTeamDisplayName } from './teamName'
 
 describe('getTeamDisplayName', () => {
+  it('returns AG for All Gamers', () => {
+    expect(getTeamDisplayName('All Gamers', 'all-gamers')).toBe('AG')
+    expect(getTeamDisplayName('All Gamers')).toBe('AG')
+  })
+
   it('returns TE for Trace Esport(s)', () => {
     expect(getTeamDisplayName('Trace Esports', 'trace-esports')).toBe('TE')
     expect(getTeamDisplayName('Trace Esport', 'trace-esport')).toBe('TE')
