@@ -1,55 +1,62 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-03-27T14:10:56.368013Z",
+  "generatedAt": "2026-04-03T07:12:46.437159Z",
   "maps": [
     {
       "mapName": "Split",
+      "sampleCount": 16,
+      "teamCount": 10,
+      "lastUpdatedAt": "2026-04-02T09:05:59.936347+00:00",
+      "shard": "maps/split.json"
+    },
+    {
+      "mapName": "Pearl",
       "sampleCount": 14,
       "teamCount": 9,
-      "lastUpdatedAt": "2026-03-23T03:10:58.848167+00:00",
-      "shard": "maps/split.json"
+      "lastUpdatedAt": "2026-04-02T12:51:28.163661+00:00",
+      "shard": "maps/pearl.json"
+    },
+    {
+      "mapName": "Bind",
+      "sampleCount": 12,
+      "teamCount": 6,
+      "lastUpdatedAt": "2026-04-03T01:38:38.679094+00:00",
+      "shard": "maps/bind.json"
     },
     {
       "mapName": "Haven",
       "sampleCount": 12,
       "teamCount": 9,
-      "lastUpdatedAt": "2026-03-27T13:56:28.764237+00:00",
+      "lastUpdatedAt": "2026-04-01T08:59:30.095948+00:00",
       "shard": "maps/haven.json"
     },
     {
-      "mapName": "Pearl",
-      "sampleCount": 12,
-      "teamCount": 7,
-      "lastUpdatedAt": "2026-03-23T03:37:20.096752+00:00",
-      "shard": "maps/pearl.json"
-    },
-    {
-      "mapName": "Bind",
-      "sampleCount": 10,
-      "teamCount": 6,
-      "lastUpdatedAt": "2026-03-27T14:09:49.159121+00:00",
-      "shard": "maps/bind.json"
-    },
-    {
       "mapName": "Breeze",
-      "sampleCount": 6,
-      "teamCount": 4,
-      "lastUpdatedAt": "2026-03-24T12:01:04.609542+00:00",
+      "sampleCount": 8,
+      "teamCount": 5,
+      "lastUpdatedAt": "2026-04-03T06:04:06.490720+00:00",
       "shard": "maps/breeze.json"
     },
     {
       "mapName": "Abyss",
       "sampleCount": 2,
       "teamCount": 2,
-      "lastUpdatedAt": "2026-03-23T03:08:12.637649+00:00",
+      "lastUpdatedAt": "2026-04-01T08:59:30.096105+00:00",
       "shard": "maps/abyss.json"
     },
     {
       "mapName": "Corrode",
       "sampleCount": 2,
       "teamCount": 2,
-      "lastUpdatedAt": "2026-03-23T03:08:20.310318+00:00",
+      "lastUpdatedAt": "2026-04-01T08:59:30.095627+00:00",
       "shard": "maps/corrode.json"
+    },
+    {
+      "mapName": "Lotus",
+      "sampleCount": 2,
+      "teamCount": 2,
+      "lastUpdatedAt": "2026-04-02T14:49:37.131205+00:00",
+      "shard": "maps/lotus.json"
     }
   ]
 }

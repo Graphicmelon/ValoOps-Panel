@@ -298,6 +298,15 @@ it('lists maps and returns map/team options from static dataset', async () => {
   expect(teamOptions.opponents).toEqual([{ slug: 't1', name: 'T1' }])
   expect(teamOptions.matches).toEqual([
     {
+      matchId: '598948',
+      tournamentId: null,
+      tournamentName: null,
+      opponentSlug: 't1',
+      opponentName: 'T1',
+      matchDateCode: null,
+      updatedAt: '2026-03-11T00:00:00Z',
+    },
+    {
       matchId: '598950',
       tournamentId: 'tournament-1',
       tournamentName: 'VCT 2026: China Kickoff',
@@ -314,15 +323,6 @@ it('lists maps and returns map/team options from static dataset', async () => {
       opponentName: 'T1',
       matchDateCode: '260207',
       updatedAt: '2026-03-10T00:00:00Z',
-    },
-    {
-      matchId: '598948',
-      tournamentId: null,
-      tournamentName: null,
-      opponentSlug: 't1',
-      opponentName: 'T1',
-      matchDateCode: null,
-      updatedAt: '2026-03-11T00:00:00Z',
     },
   ])
 })

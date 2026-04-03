@@ -4,6 +4,7 @@ import { getMapDashboard, getMapOptions, getTeamMapOptions } from '../api'
 import { MultiObjectHeatmap } from '../components/MultiObjectHeatmap'
 import { MultiObjectPaceChart } from '../components/MultiObjectPaceChart'
 import { PillToggle } from '../components/PillToggle'
+import { compareMatchOptionDesc } from '../lib/matchOptions'
 import { StatusBadge } from '../components/StatusBadge'
 import { getTeamDisplayName } from '../lib/teamName'
 import type {
@@ -148,18 +149,6 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
       return compact.length > 0 ? compact : null
     }
 
-    function compareMatch(left: DashboardMatchOption, right: DashboardMatchOption): number {
-      if (left.matchDateCode !== right.matchDateCode) {
-        if (left.matchDateCode === null) return 1
-        if (right.matchDateCode === null) return -1
-        const byDate = right.matchDateCode.localeCompare(left.matchDateCode)
-        if (byDate !== 0) return byDate
-      }
-      const byUpdatedAt = right.updatedAt.localeCompare(left.updatedAt)
-      if (byUpdatedAt !== 0) return byUpdatedAt
-      return right.matchId.localeCompare(left.matchId)
-    }
-
     const groups = new Map<
       string,
       {
@@ -200,12 +189,12 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
 
     return [...groups.entries()]
       .map(([key, tournament]) => {
-        const matches = [...tournament.matches].sort(compareMatch)
+        const matches = [...tournament.matches].sort(compareMatchOptionDesc)
         const opponents = [...tournament.opponents.entries()]
           .map(([slug, opponent]) => ({
             slug,
             name: opponent.name,
-            matches: [...opponent.matches].sort(compareMatch),
+            matches: [...opponent.matches].sort(compareMatchOptionDesc),
           }))
           .sort((a, b) => a.name.localeCompare(b.name))
         return {
@@ -225,7 +214,7 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
         const leftTop = left.matches[0]
         const rightTop = right.matches[0]
         if (leftTop && rightTop) {
-          const byRecent = compareMatch(leftTop, rightTop)
+          const byRecent = compareMatchOptionDesc(leftTop, rightTop)
           if (byRecent !== 0) {
             return byRecent
           }

@@ -1,4 +1,5 @@
 import { loadManifest, loadMapShardByName, refreshDatasetIfUpdated } from './staticDataStore'
+import { compareMatchOptionDesc } from './lib/matchOptions'
 import type {
   StaticKillEventRow,
   StaticMapShard,
@@ -66,33 +67,6 @@ function mapNameEquals(left: string, right: string): boolean {
 
 function maxText(values: readonly string[]): string {
   return values.reduce<string>((max, current) => (current > max ? current : max), '')
-}
-
-function compareMatchOptionDesc(left: DashboardMatchOption, right: DashboardMatchOption): number {
-  if (left.matchDateCode !== right.matchDateCode) {
-    if (left.matchDateCode === null) {
-      return 1
-    }
-    if (right.matchDateCode === null) {
-      return -1
-    }
-    const byDate = right.matchDateCode.localeCompare(left.matchDateCode)
-    if (byDate !== 0) {
-      return byDate
-    }
-  }
-
-  const byUpdatedAt = right.updatedAt.localeCompare(left.updatedAt)
-  if (byUpdatedAt !== 0) {
-    return byUpdatedAt
-  }
-
-  const byMatchId = right.matchId.localeCompare(left.matchId)
-  if (byMatchId !== 0) {
-    return byMatchId
-  }
-
-  return 0
 }
 
 function makeRoundKey(sampleId: number, roundNumber: number): string {
