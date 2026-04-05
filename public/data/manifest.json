@@ -1,48 +1,27 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-04-03T07:12:46.437159Z",
+  "generatedAt": "2026-04-05T14:08:49.256291+00:00",
   "maps": [
-    {
-      "mapName": "Split",
-      "sampleCount": 16,
-      "teamCount": 10,
-      "lastUpdatedAt": "2026-04-02T09:05:59.936347+00:00",
-      "shard": "maps/split.json"
-    },
-    {
-      "mapName": "Pearl",
-      "sampleCount": 14,
-      "teamCount": 9,
-      "lastUpdatedAt": "2026-04-02T12:51:28.163661+00:00",
-      "shard": "maps/pearl.json"
-    },
-    {
-      "mapName": "Bind",
-      "sampleCount": 12,
-      "teamCount": 6,
-      "lastUpdatedAt": "2026-04-03T01:38:38.679094+00:00",
-      "shard": "maps/bind.json"
-    },
-    {
-      "mapName": "Haven",
-      "sampleCount": 12,
-      "teamCount": 9,
-      "lastUpdatedAt": "2026-04-01T08:59:30.095948+00:00",
-      "shard": "maps/haven.json"
-    },
-    {
-      "mapName": "Breeze",
-      "sampleCount": 8,
-      "teamCount": 5,
-      "lastUpdatedAt": "2026-04-03T06:04:06.490720+00:00",
-      "shard": "maps/breeze.json"
-    },
     {
       "mapName": "Abyss",
       "sampleCount": 2,
       "teamCount": 2,
       "lastUpdatedAt": "2026-04-01T08:59:30.096105+00:00",
       "shard": "maps/abyss.json"
+    },
+    {
+      "mapName": "Bind",
+      "sampleCount": 18,
+      "teamCount": 8,
+      "lastUpdatedAt": "2026-04-05T14:08:49.255398+00:00",
+      "shard": "maps/bind.json"
+    },
+    {
+      "mapName": "Breeze",
+      "sampleCount": 12,
+      "teamCount": 7,
+      "lastUpdatedAt": "2026-04-05T14:08:49.247970+00:00",
+      "shard": "maps/breeze.json"
     },
     {
       "mapName": "Corrode",
@@ -52,11 +31,32 @@
       "shard": "maps/corrode.json"
     },
     {
+      "mapName": "Haven",
+      "sampleCount": 14,
+      "teamCount": 10,
+      "lastUpdatedAt": "2026-04-05T14:08:49.240649+00:00",
+      "shard": "maps/haven.json"
+    },
+    {
       "mapName": "Lotus",
-      "sampleCount": 2,
-      "teamCount": 2,
-      "lastUpdatedAt": "2026-04-02T14:49:37.131205+00:00",
+      "sampleCount": 6,
+      "teamCount": 4,
+      "lastUpdatedAt": "2026-04-05T14:08:49.251568+00:00",
       "shard": "maps/lotus.json"
+    },
+    {
+      "mapName": "Pearl",
+      "sampleCount": 14,
+      "teamCount": 9,
+      "lastUpdatedAt": "2026-04-03T15:28:16.876731+00:00",
+      "shard": "maps/pearl.json"
+    },
+    {
+      "mapName": "Split",
+      "sampleCount": 16,
+      "teamCount": 10,
+      "lastUpdatedAt": "2026-04-03T15:28:15.120742+00:00",
+      "shard": "maps/split.json"
     }
   ]
 }
