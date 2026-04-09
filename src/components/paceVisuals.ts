@@ -20,8 +20,8 @@ export const PACE_PLANT_PATTERN_ITEMS: PacePlantPatternItem[] = [
 ]
 
 export const PACE_LINE_LEGEND_ITEMS: PaceLineLegendItem[] = [
-  { key: 'kills', label: '击杀' },
-  { key: 'deaths', label: '死亡' },
+  { key: 'kills', label: 'Kills' },
+  { key: 'deaths', label: 'Deaths' },
 ]
 
 function createPacePlantDecal(site: PacePlantSite) {

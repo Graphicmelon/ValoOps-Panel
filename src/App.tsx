@@ -139,7 +139,7 @@ function App() {
         setIsLoading(false)
       } catch (loadError) {
         if (cancelled) return
-        setError(loadError instanceof Error ? loadError.message : '加载地图列表失败。')
+        setError(loadError instanceof Error ? loadError.message : 'Failed to load the map list.')
         setIsLoading(false)
       }
     }

@@ -204,14 +204,14 @@ it('renders map list and navigates to map dashboard page', async () => {
   render(<App />)
 
   await screen.findByText('Pearl')
-  fireEvent.click(screen.getByRole('button', { name: /进入看板/i }))
+  fireEvent.click(screen.getByRole('button', { name: /Open dashboard/i }))
 
   await waitFor(() => {
     expect(window.location.hash).toBe('#/maps/Pearl')
   })
 
-  await screen.findByText(/← 返回(地图列表|看板)/)
-  expect(screen.getByText('先添加一个对象，再配置筛选条件。')).toBeInTheDocument()
+  await screen.findByText(/← Back to dashboard/)
+  expect(screen.getByText('Add an object first, then configure filters.')).toBeInTheDocument()
 })
 
 it('supports adding and capping compare objects at four', async () => {
@@ -220,16 +220,16 @@ it('supports adding and capping compare objects at four', async () => {
 
   render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  const addButtons = screen.getAllByRole('button', { name: '添加对象' })
+  await screen.findByText('Add an object first, then configure filters.')
+  const addButtons = screen.getAllByRole('button', { name: 'Add object' })
 
   fireEvent.click(addButtons[0])
-  fireEvent.click(screen.getByRole('button', { name: '添加对象' }))
-  fireEvent.click(screen.getByRole('button', { name: '添加对象' }))
-  fireEvent.click(screen.getByRole('button', { name: '添加对象' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Add object' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Add object' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Add object' }))
 
-  expect(screen.getByText(/对象选择 · 4 \/ 4/)).toBeInTheDocument()
-  expect(screen.getByRole('button', { name: '添加对象' })).toBeDisabled()
+  expect(screen.getByText(/Object selection · 4 \/ 4/)).toBeInTheDocument()
+  expect(screen.getByRole('button', { name: 'Add object' })).toBeDisabled()
 })
 
 it('shows matchDateCode with matchId in source picker second-level items', async () => {
@@ -238,13 +238,13 @@ it('shows matchDateCode with matchId in source picker second-level items', async
 
   render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
-  await screen.findByText('数据来源')
-  fireEvent.click(screen.getAllByRole('button', { name: '展开' })[0])
-  fireEvent.click(screen.getAllByRole('button', { name: '展开' })[0])
+  await screen.findByText('Data source')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Expand' })[0])
+  fireEvent.click(screen.getAllByRole('button', { name: 'Expand' })[0])
 
   expect(await screen.findByText('260209-edward-gaming-match-1')).toBeInTheDocument()
   expect(screen.queryByText('2026-03-08')).not.toBeInTheDocument()
@@ -256,16 +256,16 @@ it('auto enters overview compare when multiple teams are selected in heatmap', a
 
   const { container } = render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
 
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
-  fireEvent.click(screen.getByRole('button', { name: '添加对象' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Add object' }))
   await waitFor(() => {
-    expect(screen.getAllByLabelText('队伍')).toHaveLength(2)
+    expect(screen.getAllByLabelText('Team')).toHaveLength(2)
   })
-  fireEvent.change(screen.getAllByLabelText('队伍')[1], { target: { value: 't1' } })
+  fireEvent.change(screen.getAllByLabelText('Team')[1], { target: { value: 't1' } })
 
   const edgLegendButton = (await screen.findAllByRole('button', { name: /^EDG/ })).find((btn) =>
     /\d/.test(btn.textContent ?? ''),
@@ -273,14 +273,14 @@ it('auto enters overview compare when multiple teams are selected in heatmap', a
   const t1LegendButton = (await screen.findAllByRole('button', { name: /^T1/ })).find((btn) =>
     /\d/.test(btn.textContent ?? ''),
   )
-  const pointMetricLabel = await screen.findByText('显示中的击杀点')
+  const pointMetricLabel = await screen.findByText('Visible kill points')
 
   expect(edgLegendButton).toBeTruthy()
   expect(t1LegendButton).toBeTruthy()
 
-  expect(screen.queryByRole('button', { name: '总览' })).not.toBeInTheDocument()
-  expect(screen.queryByRole('button', { name: '单对象' })).not.toBeInTheDocument()
-  expect(screen.getAllByText('包点')).toHaveLength(1)
+  expect(screen.queryByRole('button', { name: 'Overview' })).not.toBeInTheDocument()
+  expect(screen.queryByRole('button', { name: 'Single object' })).not.toBeInTheDocument()
+  expect(screen.getAllByText('Site')).toHaveLength(1)
 
   await waitFor(() => {
     expect(container.querySelectorAll('img[alt="Pearl tactical map"]')).toHaveLength(1)
@@ -319,21 +319,21 @@ it('switches to relation mode in all-kills perspective and disables subject togg
 
   const { container } = render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
-  const pointMetricLabel = await screen.findByText('显示中的击杀点')
+  const pointMetricLabel = await screen.findByText('Visible kill points')
   await waitFor(() => {
     expect(pointMetricLabel.previousElementSibling).toHaveTextContent('1')
   })
 
-  fireEvent.click(screen.getByRole('button', { name: '全部击杀' }))
-  const relationMetricLabel = await screen.findByText('显示中的击杀事件')
+  fireEvent.click(screen.getByRole('button', { name: 'All kills' }))
+  const relationMetricLabel = await screen.findByText('Visible kill events')
 
   await waitFor(() => {
-    expect(screen.getByRole('button', { name: '击杀者' })).toBeDisabled()
-    expect(screen.getByRole('button', { name: '受害者' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: 'Killer' })).toBeDisabled()
+    expect(screen.getByRole('button', { name: 'Victim' })).toBeDisabled()
     expect(container.querySelectorAll('[data-relation-line="true"]')).toHaveLength(2)
     expect(relationMetricLabel.previousElementSibling).toHaveTextContent('2')
   })
@@ -345,12 +345,12 @@ it('switches to relation mode in all-kills perspective and disables subject togg
     expect(relationMetricLabel.previousElementSibling).toHaveTextContent('1')
   })
 
-  fireEvent.click(screen.getByRole('button', { name: '队伍击杀' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Team kills' }))
 
   await waitFor(() => {
-    expect(screen.getByRole('button', { name: '击杀者' })).not.toBeDisabled()
-    expect(screen.queryByText('显示中的击杀事件')).not.toBeInTheDocument()
-    expect(screen.getByText('显示中的击杀点')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Killer' })).not.toBeDisabled()
+    expect(screen.queryByText('Visible kill events')).not.toBeInTheDocument()
+    expect(screen.getByText('Visible kill points')).toBeInTheDocument()
     expect(container.querySelectorAll('[data-relation-line="true"]')).toHaveLength(0)
   })
 })
@@ -361,12 +361,12 @@ it('throttles heatmap time filter requests while dragging slider', async () => {
 
   render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
-  await screen.findByText('时间范围')
-  const minSlider = screen.getByLabelText('时间范围起点')
+  await screen.findByText('Time range')
+  const minSlider = screen.getByLabelText('Time range start')
 
   const initialCalls = getMapDashboardMock.mock.calls.length
   fireEvent.change(minSlider, { target: { value: '20' } })
@@ -393,17 +393,17 @@ it('clears heatmap time filter when reset button is clicked', async () => {
 
   render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
-  await screen.findByText('时间范围')
-  fireEvent.change(screen.getByLabelText('时间范围起点'), { target: { value: '30' } })
+  await screen.findByText('Time range')
+  fireEvent.change(screen.getByLabelText('Time range start'), { target: { value: '30' } })
 
   await sleep(220)
-  await screen.findByRole('button', { name: '重置' })
+  await screen.findByRole('button', { name: 'Reset' })
 
-  fireEvent.click(screen.getByRole('button', { name: '重置' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Reset' }))
   await sleep(220)
 
   await waitFor(() => {
@@ -418,12 +418,12 @@ it('clears pending time filter updates when phase changes', async () => {
 
   render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
-  await screen.findByText('时间范围')
-  const minSlider = screen.getByLabelText('时间范围起点')
+  await screen.findByText('Time range')
+  const minSlider = screen.getByLabelText('Time range start')
 
   fireEvent.change(minSlider, { target: { value: '20' } })
   await waitFor(() => {
@@ -431,7 +431,7 @@ it('clears pending time filter updates when phase changes', async () => {
   })
 
   fireEvent.change(minSlider, { target: { value: '32' } })
-  fireEvent.click(screen.getByRole('button', { name: '下包后' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Post-plant' }))
 
   await sleep(220)
 
@@ -500,9 +500,9 @@ it('keeps selected objects while refreshing dashboard after dataset update', asy
 
   render(<App />)
 
-  await screen.findByText('先添加一个对象，再配置筛选条件。')
-  fireEvent.click(screen.getAllByRole('button', { name: '添加对象' })[0])
-  fireEvent.change(screen.getByLabelText('队伍'), { target: { value: 'edward-gaming' } })
+  await screen.findByText('Add an object first, then configure filters.')
+  fireEvent.click(screen.getAllByRole('button', { name: 'Add object' })[0])
+  fireEvent.change(screen.getByLabelText('Team'), { target: { value: 'edward-gaming' } })
 
   await waitFor(() => {
     expect(getMapDashboardMock.mock.calls.length).toBeGreaterThan(0)

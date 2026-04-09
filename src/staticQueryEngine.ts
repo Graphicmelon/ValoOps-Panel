@@ -329,7 +329,7 @@ function resolveDashboardFilters(
     globalFilters.phase,
     objectFilters.phase,
     'all',
-    '对象阶段筛选超出了全局阶段约束。',
+    'The object phase filter conflicts with the global phase constraint.',
   )
   if (phaseConflict) {
     reasons.push(phaseConflict)
@@ -338,7 +338,7 @@ function resolveDashboardFilters(
   const [side, sideConflict] = resolveStrictEnum(
     globalFilters.side,
     objectFilters.side,
-    '对象身份筛选超出了全局身份约束。',
+    'The object side filter conflicts with the global side constraint.',
   )
   if (sideConflict) {
     reasons.push(sideConflict)
@@ -347,7 +347,7 @@ function resolveDashboardFilters(
   const [site, siteConflict] = resolveStrictEnum(
     globalFilters.site,
     objectFilters.site,
-    '对象包点筛选超出了全局包点约束。',
+    'The object site filter conflicts with the global site constraint.',
   )
   if (siteConflict) {
     reasons.push(siteConflict)
@@ -356,7 +356,7 @@ function resolveDashboardFilters(
   const [timeBucket, bucketConflict] = resolveStrictEnum(
     globalFilters.time_bucket,
     objectFilters.time_bucket,
-    '对象时段筛选超出了全局时段约束。',
+    'The object time bucket filter conflicts with the global time bucket constraint.',
   )
   if (bucketConflict) {
     reasons.push(bucketConflict)
@@ -377,7 +377,7 @@ function resolveDashboardFilters(
     heatmapTimeMax !== undefined &&
     heatmapTimeMin > heatmapTimeMax
   ) {
-    reasons.push('对象热力图时间区间与全局区间没有交集。')
+    reasons.push('The object heatmap time range does not overlap the global range.')
   }
 
   const effectiveFilters: EffectiveDashboardFilters = {
@@ -621,8 +621,8 @@ function buildDashboardHeatmap(
   let emptyReason = resolved.emptyReason
   if (!emptyReason && renderedCount === 0) {
     emptyReason = isAllKillsPerspective
-      ? '当前对象在全局约束后没有可绘制的击杀关系。'
-      : '当前对象在全局约束后没有可绘制的击杀坐标。'
+      ? 'The object has no drawable kill relations after applying the global constraints.'
+      : 'The object has no drawable kill points after applying the global constraints.'
   }
 
   return {

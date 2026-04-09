@@ -8,7 +8,7 @@ type PaceVisualLegendProps = {
 
 export function PaceVisualLegend({ className }: PaceVisualLegendProps) {
   return (
-    <div className={`${styles.root} ${className ?? ''}`} aria-label="节奏图图例">
+    <div className={`${styles.root} ${className ?? ''}`} aria-label="Pace chart legend">
       <div className={styles.group}>
         {PACE_PLANT_PATTERN_ITEMS.map((item) => (
           <div key={item.site} className={styles.item}>

@@ -147,7 +147,7 @@ it('switches metric mode between count and rate in multi-object pace chart', asy
     />,
   )
 
-  expect(screen.getByText('展示的队伍')).toBeInTheDocument()
+  expect(screen.getByText('Visible teams')).toBeInTheDocument()
 
   await waitFor(() => {
     expect(setOptionMock).toHaveBeenCalled()
@@ -156,15 +156,15 @@ it('switches metric mode between count and rate in multi-object pace chart', asy
   const countAxis = latestOption().yAxis
   expect(Array.isArray(countAxis)).toBe(true)
   if (!Array.isArray(countAxis)) throw new Error('Expected dual yAxis in count mode')
-  expect(countAxis[0]?.name).toBe('下包')
-  expect(countAxis[1]?.name).toBe('击杀/死亡')
+  expect(countAxis[0]?.name).toBe('Plants')
+  expect(countAxis[1]?.name).toBe('Kills / Deaths')
 
-  fireEvent.click(screen.getByRole('button', { name: '占比' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Rate' }))
 
   await waitFor(() => {
     const yAxis = latestOption().yAxis
     expect(Array.isArray(yAxis)).toBe(false)
-    expect((yAxis as { name?: string })?.name).toBe('占比')
+    expect((yAxis as { name?: string })?.name).toBe('Rate')
   })
 })
 
@@ -201,12 +201,12 @@ it('builds combined series and supports independent visibility toggles', async (
   const initialSeriesNames = (latestOption().series ?? [])
     .map((series) => series.name ?? '')
     .join('|')
-  expect(initialSeriesNames).toContain('EDG 击杀')
-  expect(initialSeriesNames).toContain('T1 击杀')
-  expect(initialSeriesNames).toContain('EDG A 点下包')
+  expect(initialSeriesNames).toContain('EDG Kills')
+  expect(initialSeriesNames).toContain('T1 Kills')
+  expect(initialSeriesNames).toContain('EDG A site plants')
 
   const edgPlantSeries = (latestOption().series ?? []).find(
-    (series) => series.name === 'EDG A 点下包',
+    (series) => series.name === 'EDG A site plants',
   )
   expect(edgPlantSeries?.itemStyle?.decal).toBeTruthy()
   expect(edgPlantSeries?.yAxisIndex).toBe(0)
@@ -217,13 +217,13 @@ it('builds combined series and supports independent visibility toggles', async (
   expect(screen.getByText('A Site')).toBeInTheDocument()
   expect(screen.getByText('B Site')).toBeInTheDocument()
   expect(screen.getByText('C Site')).toBeInTheDocument()
-  expect(screen.getByText('击杀')).toBeInTheDocument()
-  expect(screen.getByText('死亡')).toBeInTheDocument()
+  expect(screen.getByText('Kills')).toBeInTheDocument()
+  expect(screen.getByText('Deaths')).toBeInTheDocument()
 
   fireEvent.click(screen.getByRole('button', { name: 'T1' }))
 
   await waitFor(() => {
     const seriesNames = (latestOption().series ?? []).map((series) => series.name ?? '').join('|')
-    expect(seriesNames).not.toContain('T1 击杀')
+    expect(seriesNames).not.toContain('T1 Kills')
   })
 })

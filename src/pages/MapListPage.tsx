@@ -14,7 +14,7 @@ export function MapListPage({ maps, isLoading, error, onOpenMap }: MapListPagePr
     <main className="page-shell">
       <header className={styles.hero}>
         <p className="eyebrow">ValoOps</p>
-        <h1>地图对比看板</h1>
+        <h1>Map Comparison Dashboard</h1>
       </header>
 
       {error ? <div className="alert-card">{error}</div> : null}
@@ -35,16 +35,16 @@ export function MapListPage({ maps, isLoading, error, onOpenMap }: MapListPagePr
               onClick={() => onOpenMap(map.mapName)}
             >
               <div className={styles.cardHeader}>
-                <p className="eyebrow">地图</p>
-                {map.teamCount >= 2 ? <StatusBadge label="可比较" variant="success" /> : null}
+                <p className="eyebrow">Map</p>
+                {map.teamCount >= 2 ? <StatusBadge label="Comparable" variant="success" /> : null}
               </div>
               <h2>{map.mapName}</h2>
               <p className={styles.metaLine}>
-                {map.sampleCount} 份样本 · {map.teamCount} 支队伍
+                {map.sampleCount} samples · {map.teamCount} teams
               </p>
               <div className={styles.cardFooter}>
-                <span>最近更新 {new Date(map.lastUpdatedAt).toLocaleDateString('zh-CN')}</span>
-                <span className={styles.enterLink}>进入看板 →</span>
+                <span>Updated {new Date(map.lastUpdatedAt).toLocaleDateString('en-US')}</span>
+                <span className={styles.enterLink}>Open dashboard →</span>
               </div>
             </button>
           ))}

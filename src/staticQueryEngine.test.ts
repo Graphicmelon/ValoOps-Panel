@@ -603,8 +603,8 @@ it('applies global constraints and returns empty reason on conflict', async () =
   const item = dashboard.objects[0]
   expect(item.effectiveFilters.site).toBe('A')
   expect(item.effectiveFilters.include_post_round).toBe(false)
-  expect(item.effectiveFilters.emptyReason).toBe('对象包点筛选超出了全局包点约束。')
+  expect(item.effectiveFilters.emptyReason).toBe('The object site filter conflicts with the global site constraint.')
   expect(item.heatmap.pointCount).toBe(0)
-  expect(item.heatmap.emptyReason).toBe('对象包点筛选超出了全局包点约束。')
+  expect(item.heatmap.emptyReason).toBe('The object site filter conflicts with the global site constraint.')
   expect(item.pace.buckets.reduce((sum, bucket) => sum + bucket.teamKills, 0)).toBe(0)
 })

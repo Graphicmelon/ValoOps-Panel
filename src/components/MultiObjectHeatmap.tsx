@@ -52,8 +52,8 @@ const RELATION_RED = '#ef4444'
 function fmtSec(sec: number, phase: PhaseFilter): string {
   const rounded = Math.round(sec * 10) / 10
   const value = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1)
-  if (phase === 'pre_plant') return `${value}s前`
-  if (phase === 'post_plant') return `${value}s后`
+  if (phase === 'pre_plant') return `${value}s before plant`
+  if (phase === 'post_plant') return `${value}s after plant`
   return `${value}s`
 }
 
@@ -201,34 +201,34 @@ export function MultiObjectHeatmap({
     <section className={`${styles.root} panel`}>
       <div className="panel-header">
         <div>
-          <h2>{isRelationMode ? '击杀关系图' : '热力图'}</h2>
+          <h2>{isRelationMode ? 'Kill relation map' : 'Heatmap'}</h2>
         </div>
         <div className="metric-pair">
           <strong>{totalPoints}</strong>
-          <span>{isRelationMode ? '显示中的击杀事件' : '显示中的击杀点'}</span>
+          <span>{isRelationMode ? 'Visible kill events' : 'Visible kill points'}</span>
         </div>
       </div>
 
       <div className={styles.toolbar}>
         <div className={styles.controlsRow}>
           <div className={styles.toolbarGroup}>
-            <span className={styles.label}>视角</span>
+            <span className={styles.label}>Perspective</span>
             <PillToggle
               options={[
-                { value: 'team_kills', label: '队伍击杀' },
-                { value: 'team_deaths', label: '队伍死亡' },
-                { value: 'all_kills', label: '全部击杀' },
+                { value: 'team_kills', label: 'Team kills' },
+                { value: 'team_deaths', label: 'Team deaths' },
+                { value: 'all_kills', label: 'All kills' },
               ]}
               value={perspective}
               onChange={(value) => value && onPerspectiveChange(value)}
             />
           </div>
           <div className={styles.toolbarGroup}>
-            <span className={styles.label}>绘制主体</span>
+            <span className={styles.label}>Marker subject</span>
             <PillToggle
               options={[
-                { value: 'killer', label: '击杀者' },
-                { value: 'victim', label: '受害者' },
+                { value: 'killer', label: 'Killer' },
+                { value: 'victim', label: 'Victim' },
               ]}
               value={subject}
               onChange={(value) => value && onSubjectChange(value)}
@@ -236,7 +236,7 @@ export function MultiObjectHeatmap({
             />
           </div>
           <div className={styles.toolbarGroup}>
-            <span className={styles.label}>包点</span>
+            <span className={styles.label}>Site</span>
             <PillToggle
               options={[
                 { value: 'A', label: 'A' },
@@ -252,11 +252,11 @@ export function MultiObjectHeatmap({
 
         <div className={styles.analysisRow}>
           <div className={styles.toolbarGroup}>
-            <span className={styles.label}>身份</span>
+            <span className={styles.label}>Side</span>
             <PillMultiToggle
               options={[
-                { value: 'atk', label: '进攻' },
-                { value: 'def', label: '防守' },
+                { value: 'atk', label: 'Attack' },
+                { value: 'def', label: 'Defense' },
               ]}
               values={selectedSides}
               onChange={onSidesChange}
@@ -264,7 +264,7 @@ export function MultiObjectHeatmap({
           </div>
 
           <div className={styles.teamPickerWrap}>
-            <span className={styles.label}>展示的队伍</span>
+            <span className={styles.label}>Visible teams</span>
             <div className={styles.teamPicker}>
               <div className={styles.legend}>
                 {objects.map((item) => {
@@ -305,7 +305,7 @@ export function MultiObjectHeatmap({
         {timeRange ? (
           <div className={styles.timeRangeSection}>
             <div className={styles.timeRangeHeader}>
-              <span className={styles.label}>时间范围</span>
+              <span className={styles.label}>Time range</span>
               <span className={styles.timeRangeValue}>
                 {fmtSec(normalizedSliderMin, phase)}
                 <span className={styles.timeRangeDash}> - </span>
@@ -317,7 +317,7 @@ export function MultiObjectHeatmap({
                   className={styles.timeRangeReset}
                   onClick={() => onTimeRangeChange(timeRange.availableMin, timeRange.availableMax)}
                 >
-                  重置
+                  Reset
                 </button>
               ) : null}
             </div>
@@ -332,7 +332,7 @@ export function MultiObjectHeatmap({
               <input
                 type="range"
                 className={`${styles.timeRangeInput} ${styles.timeRangeMin}`}
-                aria-label="时间范围起点"
+                aria-label="Time range start"
                 min={timeRange.availableMin}
                 max={timeRange.availableMax}
                 step={TIME_STEP}
@@ -347,7 +347,7 @@ export function MultiObjectHeatmap({
               <input
                 type="range"
                 className={`${styles.timeRangeInput} ${styles.timeRangeMax}`}
-                aria-label="时间范围终点"
+                aria-label="Time range end"
                 min={timeRange.availableMin}
                 max={timeRange.availableMax}
                 step={TIME_STEP}
@@ -371,15 +371,17 @@ export function MultiObjectHeatmap({
 
       {!objects.length ? (
         <div className="empty-card" style={{ margin: 24 }}>
-          先添加比较对象，再查看地图热力图。
+          Add a comparison object first, then view the map heatmap.
         </div>
       ) : !anyVisible ? (
         <div className="empty-card" style={{ margin: 24 }}>
-          至少保留一个比较对象用于展示热力图。
+          Keep at least one comparison object visible to display the heatmap.
         </div>
       ) : !hasAnyPoints ? (
         <div className="empty-card" style={{ margin: 24 }}>
-          {isRelationMode ? '当前显示对象在生效条件下没有可绘制的击杀关系。' : '当前显示对象在生效条件下没有可绘制的击杀坐标。'}
+          {isRelationMode
+            ? 'The visible objects have no drawable kill relations under the active filters.'
+            : 'The visible objects have no drawable kill points under the active filters.'}
         </div>
       ) : (
         <div className={styles.grid}>
@@ -469,7 +471,7 @@ export function MultiObjectHeatmap({
 
       {!isRelationMode ? (
         <div className={styles.scaleWrap}>
-          <ColorScaleBar scale="hot" ticks={[0, 1, 2, 3, '4+']} label="统一密度标尺" />
+          <ColorScaleBar scale="hot" ticks={[0, 1, 2, 3, '4+']} label="Unified density scale" />
         </div>
       ) : null}
     </section>

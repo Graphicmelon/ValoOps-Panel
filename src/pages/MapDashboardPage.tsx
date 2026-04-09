@@ -162,7 +162,7 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
     for (const match of options?.matches ?? []) {
       const tournamentId = normalizeOptional(match.tournamentId)
       const tournamentName =
-        normalizeOptional(match.tournamentName) ?? tournamentId ?? '未标注赛事'
+        normalizeOptional(match.tournamentName) ?? tournamentId ?? 'Unlabeled tournament'
       const tournamentKey = tournamentId ?? '__unknown_tournament__'
       let tournament = groups.get(tournamentKey)
       if (!tournament) {
@@ -318,23 +318,23 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
   return (
     <div className={styles.sourcePicker}>
       <div className={styles.sourcePickerHeader}>
-        <span className={styles.fieldLabel}>数据来源</span>
+        <span className={styles.fieldLabel}>Data source</span>
         {matchIds.length > 0 ? (
           <button
             type="button"
             className={styles.clearBtn}
             onClick={() => onChange({ tournamentIds: [], matchIds: [] })}
           >
-            已选 {matchIds.length}/{totalMatches} 场 · 清除
+            Selected {matchIds.length}/{totalMatches} matches · Clear
           </button>
         ) : (
-          <span className={styles.sourceAll}>全部 {totalMatches} 场</span>
+          <span className={styles.sourceAll}>All {totalMatches} matches</span>
         )}
       </div>
 
       <div className={styles.sourceTree}>
-        {!options && <p className={styles.sourceHint}>请先选择队伍</p>}
-        {options && tournamentGroups.length === 0 && <p className={styles.sourceHint}>暂无对战数据</p>}
+        {!options && <p className={styles.sourceHint}>Select a team first</p>}
+        {options && tournamentGroups.length === 0 && <p className={styles.sourceHint}>No match data available</p>}
         {tournamentGroups.map((tournament) => {
           const selectedMatchCount = tournament.matches.filter((match) =>
             matchIdSet.has(match.matchId),
@@ -349,7 +349,7 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
                   type="button"
                   className={`${styles.expandBtn} ${tournamentOpen ? styles.expandBtnOpen : ''}`}
                   onClick={() => toggleExpandTournament(tournament.key)}
-                  aria-label={tournamentOpen ? '收起' : '展开'}
+                  aria-label={tournamentOpen ? 'Collapse' : 'Expand'}
                 >
                   ▸
                 </button>
@@ -381,7 +381,7 @@ function SourcePicker({ options, matchIds, onChange }: SourcePickerProps) {
                             type="button"
                             className={`${styles.expandBtn} ${opponentOpen ? styles.expandBtnOpen : ''}`}
                             onClick={() => toggleExpandOpponent(tournament.key, opponent.slug)}
-                            aria-label={opponentOpen ? '收起' : '展开'}
+                            aria-label={opponentOpen ? 'Collapse' : 'Expand'}
                           >
                             ▸
                           </button>
@@ -673,7 +673,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
         if (cancelled) {
           return
         }
-        setMetaError(error instanceof Error ? error.message : '加载地图信息失败。')
+        setMetaError(error instanceof Error ? error.message : 'Failed to load map information.')
         setIsMetaLoading(false)
       }
     }
@@ -712,7 +712,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
         if (cancelled) {
           return
         }
-        setDashboardError(error instanceof Error ? error.message : '加载对象筛选项失败。')
+        setDashboardError(error instanceof Error ? error.message : 'Failed to load object filters.')
       })
 
     return () => {
@@ -759,7 +759,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
           return
         }
         setDashboardObjects([])
-        setDashboardError(error instanceof Error ? error.message : '加载地图看板失败。')
+        setDashboardError(error instanceof Error ? error.message : 'Failed to load the map dashboard.')
         setIsDashboardLoading(false)
       })
 
@@ -837,7 +837,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
     <main className={`page-shell detail-shell ${styles.root}`}>
       <div className={styles.topBar}>
         <button type="button" className={styles.backButton} onClick={onBack}>
-          ← 返回看板
+          ← Back to dashboard
         </button>
         <h1 className={styles.mapTitle}>{resolvedMapName}</h1>
       </div>
@@ -848,33 +848,33 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
       <section className={`${styles.filterBar} panel`}>
         <div className="panel-header">
           <div>
-            <h2>筛选</h2>
+            <h2>Filters</h2>
           </div>
-          {isDashboardLoading ? <StatusBadge label="图表刷新中" variant="warning" /> : null}
+          {isDashboardLoading ? <StatusBadge label="Refreshing charts" variant="warning" /> : null}
         </div>
 
         <div className={styles.filterBarBody}>
           {/* ── Left: global conditions ──────────────────────────── */}
           <div className={styles.globalSide}>
             <div className={styles.sectionHeaderRow}>
-              <p className={styles.sectionLabel}>全局条件</p>
+              <p className={styles.sectionLabel}>Global filters</p>
             </div>
             <div className={styles.globalContent}>
               <div className={styles.fieldBlock}>
-                <span className={styles.fieldLabel}>阶段</span>
+                <span className={styles.fieldLabel}>Phase</span>
                 <PillToggle
                   options={[
-                    { value: 'all', label: '全阶段' },
-                    { value: 'pre_plant', label: '下包前' },
-                    { value: 'post_plant', label: '下包后' },
+                    { value: 'all', label: 'All phases' },
+                    { value: 'pre_plant', label: 'Pre-plant' },
+                    { value: 'post_plant', label: 'Post-plant' },
                   ]}
                   value={globalFilters.phase}
                   onChange={(value) => value && handlePhaseChange(value)}
                 />
               </div>
               <div className={styles.fieldBlock}>
-                <span className={styles.fieldLabel}>击杀事件类型</span>
-                <div className={styles.eventTypeToggle} role="group" aria-label="击杀事件类型">
+                <span className={styles.fieldLabel}>Kill event type</span>
+                <div className={styles.eventTypeToggle} role="group" aria-label="Kill event type">
                   <button
                     type="button"
                     className={`${styles.eventTypePill} ${
@@ -885,7 +885,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                       updateGlobalFilters({ include_post_round: !globalFilters.include_post_round })
                     }
                   >
-                    回合后击杀
+                    Post-round kills
                   </button>
                   <button
                     type="button"
@@ -897,7 +897,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                       updateGlobalFilters({ include_ability: !globalFilters.include_ability })
                     }
                   >
-                    技能击杀
+                    Ability kills
                   </button>
                 </div>
               </div>
@@ -907,21 +907,21 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
           {/* ── Right: object selection ───────────────────────────── */}
           <div className={styles.objectSide}>
             <div className={styles.sectionHeaderRow}>
-              <p className={styles.sectionLabel}>对象选择 · {objects.length} / 4</p>
+              <p className={styles.sectionLabel}>Object selection · {objects.length} / 4</p>
               <button
                 type="button"
                 className={styles.primaryAction}
                 onClick={addObject}
                 disabled={objects.length >= 4 || isMetaLoading}
               >
-                添加对象
+                Add object
               </button>
             </div>
 
             <div className={styles.objectContent}>
             {!objects.length ? (
               <div className={styles.emptyState}>
-                <p>先添加一个对象，再配置筛选条件。</p>
+                <p>Add an object first, then configure filters.</p>
               </div>
             ) : (
               <div className={styles.objectRow}>
@@ -937,7 +937,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                     >
                       <div className={styles.objectHeader}>
                         <div className={styles.objectCardInfo}>
-                          <p className="eyebrow">对象 {index + 1}</p>
+                          <p className="eyebrow">Object {index + 1}</p>
                           <div className={styles.objectTitleRow}>
                             <span
                               className={styles.colorDot}
@@ -946,7 +946,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                             <h3>
                               {dashboardItem
                                 ? getTeamDisplayName(dashboardItem.team.name, dashboardItem.team.slug)
-                                : '待选择队伍'}
+                                : 'Select a team'}
                             </h3>
                           </div>
                         </div>
@@ -957,20 +957,20 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                             onClick={() => copyObject(item.id)}
                             disabled={objects.length >= 4}
                           >
-                            复制
+                            Copy
                           </button>
                           <button
                             type="button"
                             className="ghost-link"
                             onClick={() => removeObject(item.id)}
                           >
-                            删除
+                            Delete
                           </button>
                         </div>
                       </div>
 
                       <label className={styles.inputField}>
-                        <span className={styles.fieldLabel}>队伍</span>
+                        <span className={styles.fieldLabel}>Team</span>
                         <select
                           value={item.teamSlug ?? ''}
                           onChange={(event) =>
@@ -986,7 +986,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                             }))
                           }
                         >
-                          <option value="">请选择队伍</option>
+                          <option value="">Select a team</option>
                           {mapOptions?.teams.map((team) => (
                             <option key={team.slug} value={team.slug}>
                               {getTeamDisplayName(team.name, team.slug)}

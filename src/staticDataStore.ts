@@ -16,7 +16,7 @@ let refreshPromise: Promise<boolean> | null = null
 async function fetchJson<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(path, init)
   if (!response.ok) {
-    throw new Error(`请求失败：${response.status}`)
+    throw new Error(`Request failed: ${response.status}`)
   }
   return response.json() as Promise<T>
 }
@@ -40,7 +40,7 @@ function buildShardPath(shardPath: string, manifestGeneratedAt: string): string 
 
 function validateManifest(manifest: StaticDatasetManifest): StaticDatasetManifest {
   if (manifest.version !== STATIC_DATASET_VERSION) {
-    throw new Error(`不支持的数据版本：${manifest.version}`)
+    throw new Error(`Unsupported data version: ${manifest.version}`)
   }
   return manifest
 }
@@ -138,7 +138,7 @@ export async function loadMapShardByName(mapName: string): Promise<{
       fetchJson<StaticMapShard>(buildShardPath(map.shard, manifest.generatedAt))
         .then((shard) => {
           if (shard.version !== STATIC_DATASET_VERSION) {
-            throw new Error(`不支持的数据版本：${shard.version}`)
+            throw new Error(`Unsupported data version: ${shard.version}`)
           }
           return shard
         })

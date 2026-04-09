@@ -158,7 +158,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
 
       series.push(
         {
-          name: `${teamName} A 点下包`,
+          name: `${teamName} A site plants`,
           type: 'bar',
           yAxisIndex: isCount ? 0 : undefined,
           stack: `plants-${item.id}`,
@@ -168,7 +168,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
           z: 2,
         },
         {
-          name: `${teamName} B 点下包`,
+          name: `${teamName} B site plants`,
           type: 'bar',
           yAxisIndex: isCount ? 0 : undefined,
           stack: `plants-${item.id}`,
@@ -178,7 +178,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
           z: 2,
         },
         {
-          name: `${teamName} C 点下包`,
+          name: `${teamName} C site plants`,
           type: 'bar',
           yAxisIndex: isCount ? 0 : undefined,
           stack: `plants-${item.id}`,
@@ -191,7 +191,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
 
       if (hasUnknownPlants) {
         series.push({
-          name: `${teamName} 包点未知`,
+          name: `${teamName} Unknown site`,
           type: 'bar',
           yAxisIndex: isCount ? 0 : undefined,
           stack: `plants-${item.id}`,
@@ -204,7 +204,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
 
       series.push(
         {
-          name: `${teamName} 击杀`,
+          name: `${teamName} Kills`,
           type: 'line',
           yAxisIndex: isCount ? 1 : undefined,
           smooth: true,
@@ -216,7 +216,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
           z: 8,
         },
         {
-          name: `${teamName} 死亡`,
+          name: `${teamName} Deaths`,
           type: 'line',
           yAxisIndex: isCount ? 1 : undefined,
           smooth: true,
@@ -249,7 +249,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
           const row = chartRows[dataIndex]
           if (!row) return ''
 
-          const lines = [`<div style="margin-bottom:6px;color:#8b949e;">时段: ${row.label}</div>`]
+          const lines = [`<div style="margin-bottom:6px;color:#8b949e;">Interval: ${row.label}</div>`]
           for (const item of visibleObjects) {
             const stats = row.byObjectId[item.id]
             if (!stats) continue
@@ -258,7 +258,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
             const deaths = `${stats.deathsCount} (${Math.round(stats.deathsRate)}%)`
             const plants = isCount ? stats.plantsTotalCount : stats.plantsTotalRate
             lines.push(
-              `<div style="margin-top:6px;">${teamName} · 击杀 ${kills} · 死亡 ${deaths} · 下包 ${formatByMode(plants, metricMode)}</div>`,
+              `<div style="margin-top:6px;">${teamName} · Kills ${kills} · Deaths ${deaths} · Plants ${formatByMode(plants, metricMode)}</div>`,
             )
           }
           return lines.join('')
@@ -275,7 +275,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
         ? [
             {
               type: 'value',
-              name: '下包',
+              name: 'Plants',
               max: plantAxisMax,
               nameTextStyle: { color: '#8b949e', fontSize: 11, padding: [0, 0, 4, 0] },
               splitLine: { lineStyle: { color: 'rgba(255,255,255,0.08)' } },
@@ -283,7 +283,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
             },
             {
               type: 'value',
-              name: '击杀/死亡',
+              name: 'Kills / Deaths',
               position: 'right',
               nameTextStyle: { color: '#8b949e', fontSize: 11, padding: [0, 0, 4, 0] },
               splitLine: { show: false },
@@ -292,7 +292,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
           ]
         : {
             type: 'value',
-            name: '占比',
+            name: 'Rate',
             nameTextStyle: { color: '#8b949e', fontSize: 11, padding: [0, 0, 4, 0] },
             splitLine: { lineStyle: { color: 'rgba(255,255,255,0.08)' } },
             axisLabel: { color: '#8b949e', fontSize: 11 },
@@ -311,30 +311,30 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
     <section className={`${styles.root} panel`}>
       <div className="panel-header">
         <div>
-          <h2>节奏图</h2>
+          <h2>Pace chart</h2>
         </div>
       </div>
 
       {!objects.length ? (
         <div className="empty-card" style={{ margin: 24 }}>
-          先添加比较对象，再查看节奏对比。
+          Add a comparison object first, then view the pace comparison.
         </div>
       ) : (
         <>
           <div className={styles.toolbar}>
             <div className={styles.metricSwitch}>
-              <span className={styles.label}>计数方式</span>
+              <span className={styles.label}>Metric mode</span>
               <PillToggle
                 options={[
-                  { value: 'count', label: '次数' },
-                  { value: 'rate', label: '占比' },
+                  { value: 'count', label: 'Count' },
+                  { value: 'rate', label: 'Rate' },
                 ]}
                 value={metricMode}
                 onChange={(mode) => setMetricMode(mode ?? 'count')}
               />
             </div>
             <div className={styles.teamPickerWrap}>
-              <span className={styles.label}>展示的队伍</span>
+              <span className={styles.label}>Visible teams</span>
               <div className={styles.teamPicker}>
                 <div className={styles.legend}>
                   {objects.map((item) => {
@@ -360,7 +360,7 @@ export function MultiObjectPaceChart({ objects, paletteByObjectId }: MultiObject
 
           {!hasVisibleObject ? (
             <div className="empty-card" style={{ margin: 24 }}>
-              至少保留一个对象用于节奏图展示。
+              Keep at least one object visible to display the pace chart.
             </div>
           ) : (
             <>
