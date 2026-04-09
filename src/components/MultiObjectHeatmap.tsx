@@ -52,8 +52,8 @@ const RELATION_RED = '#ef4444'
 function fmtSec(sec: number, phase: PhaseFilter): string {
   const rounded = Math.round(sec * 10) / 10
   const value = Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(1)
-  if (phase === 'pre_plant') return `${value}s before plant`
-  if (phase === 'post_plant') return `${value}s after plant`
+  if (phase === 'pre_plant') return `${value}s Before Plant`
+  if (phase === 'post_plant') return `${value}s After Plant`
   return `${value}s`
 }
 
@@ -203,28 +203,28 @@ export function MultiObjectHeatmap({
         <div>
           <h2>{isRelationMode ? 'Kill relation map' : 'Heatmap'}</h2>
         </div>
-        <div className="metric-pair">
-          <strong>{totalPoints}</strong>
+        <div className={styles.metricPairInline}>
           <span>{isRelationMode ? 'Visible kill events' : 'Visible kill points'}</span>
+          <strong>{totalPoints}</strong>
         </div>
       </div>
 
       <div className={styles.toolbar}>
         <div className={styles.controlsRow}>
           <div className={styles.toolbarGroup}>
-            <span className={styles.label}>Perspective</span>
+            <span className={styles.label}>Show</span>
             <PillToggle
               options={[
-                { value: 'team_kills', label: 'Team kills' },
-                { value: 'team_deaths', label: 'Team deaths' },
-                { value: 'all_kills', label: 'All kills' },
+                { value: 'team_kills', label: 'Kills' },
+                { value: 'team_deaths', label: 'Deaths' },
+                { value: 'all_kills', label: 'All' },
               ]}
               value={perspective}
               onChange={(value) => value && onPerspectiveChange(value)}
             />
           </div>
           <div className={styles.toolbarGroup}>
-            <span className={styles.label}>Marker subject</span>
+            <span className={styles.label}>Location</span>
             <PillToggle
               options={[
                 { value: 'killer', label: 'Killer' },
@@ -255,8 +255,8 @@ export function MultiObjectHeatmap({
             <span className={styles.label}>Side</span>
             <PillMultiToggle
               options={[
-                { value: 'atk', label: 'Attack' },
-                { value: 'def', label: 'Defense' },
+                { value: 'atk', label: 'ATK' },
+                { value: 'def', label: 'DEF' },
               ]}
               values={selectedSides}
               onChange={onSidesChange}

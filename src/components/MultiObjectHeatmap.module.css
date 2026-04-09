@@ -2,18 +2,42 @@
   min-height: 100%;
 }
 
+.metricPairInline {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.metricPairInline strong {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.metricPairInline span {
+  font-size: 11px;
+  color: var(--ink-subtle);
+  letter-spacing: 0.03em;
+}
+
 .toolbar {
   display: grid;
   gap: 16px;
   padding: 18px 24px 8px;
-  justify-content: center;
+  width: 100%;
 }
 
 .controlsRow {
   display: grid;
-  grid-template-columns: max-content max-content max-content;
+  grid-template-columns: repeat(3, max-content);
   align-items: center;
-  gap: 12px 20px;
+  justify-items: start;
+  justify-content: space-between;
+  gap: 12px 24px;
   width: 100%;
 }
 
@@ -22,6 +46,7 @@
   flex-wrap: nowrap;
   gap: 12px;
   align-items: center;
+  min-width: 0;
 }
 
 .label {
@@ -33,9 +58,9 @@
 
 .analysisRow {
   display: grid;
-  grid-template-columns: max-content minmax(240px, 1fr);
+  grid-template-columns: max-content minmax(0, 1fr);
   align-items: center;
-  gap: 12px 20px;
+  gap: 12px 24px;
   width: 100%;
 }
 
@@ -320,12 +345,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .teamPickerWrap {
     grid-column: auto;
     width: auto;
     flex: 1;
+  }
+
+  .toolbarGroup {
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }

@@ -293,13 +293,13 @@ it('auto enters overview compare when multiple teams are selected in heatmap', a
   })
 
   await waitFor(() => {
-    expect(pointMetricLabel.previousElementSibling).toHaveTextContent('2')
+    expect(pointMetricLabel.nextElementSibling).toHaveTextContent('2')
   })
 
   fireEvent.click(screen.getByRole('button', { name: 'B' }))
 
   await waitFor(() => {
-    expect(pointMetricLabel.previousElementSibling).toHaveTextContent('1')
+    expect(pointMetricLabel.nextElementSibling).toHaveTextContent('1')
     expect(edgLegendButton!).toHaveTextContent('0')
     expect(t1LegendButton!).toHaveTextContent('1')
   })
@@ -307,7 +307,7 @@ it('auto enters overview compare when multiple teams are selected in heatmap', a
   fireEvent.click(screen.getByRole('button', { name: 'B' }))
 
   await waitFor(() => {
-    expect(pointMetricLabel.previousElementSibling).toHaveTextContent('2')
+    expect(pointMetricLabel.nextElementSibling).toHaveTextContent('2')
     expect(edgLegendButton!).toHaveTextContent('1')
     expect(t1LegendButton!).toHaveTextContent('1')
   })
@@ -325,27 +325,27 @@ it('switches to relation mode in all-kills perspective and disables subject togg
 
   const pointMetricLabel = await screen.findByText('Visible kill points')
   await waitFor(() => {
-    expect(pointMetricLabel.previousElementSibling).toHaveTextContent('1')
+    expect(pointMetricLabel.nextElementSibling).toHaveTextContent('1')
   })
 
-  fireEvent.click(screen.getByRole('button', { name: 'All kills' }))
+  fireEvent.click(screen.getByRole('button', { name: 'All' }))
   const relationMetricLabel = await screen.findByText('Visible kill events')
 
   await waitFor(() => {
     expect(screen.getByRole('button', { name: 'Killer' })).toBeDisabled()
     expect(screen.getByRole('button', { name: 'Victim' })).toBeDisabled()
     expect(container.querySelectorAll('[data-relation-line="true"]')).toHaveLength(2)
-    expect(relationMetricLabel.previousElementSibling).toHaveTextContent('2')
+    expect(relationMetricLabel.nextElementSibling).toHaveTextContent('2')
   })
 
   fireEvent.click(screen.getByRole('button', { name: 'B' }))
 
   await waitFor(() => {
     expect(container.querySelectorAll('[data-relation-line="true"]')).toHaveLength(1)
-    expect(relationMetricLabel.previousElementSibling).toHaveTextContent('1')
+    expect(relationMetricLabel.nextElementSibling).toHaveTextContent('1')
   })
 
-  fireEvent.click(screen.getByRole('button', { name: 'Team kills' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Kills' }))
 
   await waitFor(() => {
     expect(screen.getByRole('button', { name: 'Killer' })).not.toBeDisabled()
@@ -431,7 +431,7 @@ it('clears pending time filter updates when phase changes', async () => {
   })
 
   fireEvent.change(minSlider, { target: { value: '32' } })
-  fireEvent.click(screen.getByRole('button', { name: 'Post-plant' }))
+  fireEvent.click(screen.getByRole('button', { name: 'Planted' }))
 
   await sleep(220)
 

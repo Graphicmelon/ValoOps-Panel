@@ -864,9 +864,9 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                 <span className={styles.fieldLabel}>Phase</span>
                 <PillToggle
                   options={[
-                    { value: 'all', label: 'All phases' },
-                    { value: 'pre_plant', label: 'Pre-plant' },
-                    { value: 'post_plant', label: 'Post-plant' },
+                    { value: 'all', label: 'ALL' },
+                    { value: 'pre_plant', label: 'Pre Plant' },
+                    { value: 'post_plant', label: 'Planted' },
                   ]}
                   value={globalFilters.phase}
                   onChange={(value) => value && handlePhaseChange(value)}
@@ -885,7 +885,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                       updateGlobalFilters({ include_post_round: !globalFilters.include_post_round })
                     }
                   >
-                    Post-round kills
+                    Post-Round Kills
                   </button>
                   <button
                     type="button"
@@ -897,7 +897,7 @@ export function MapDashboardPage({ mapName, dataRevision, onBack }: MapDashboard
                       updateGlobalFilters({ include_ability: !globalFilters.include_ability })
                     }
                   >
-                    Ability kills
+                    Ability Kills
                   </button>
                 </div>
               </div>

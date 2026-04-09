@@ -340,6 +340,7 @@
 
 .eventTypeToggle {
   display: inline-flex;
+  flex-wrap: wrap;
   width: fit-content;
   max-width: 100%;
   justify-self: start;
