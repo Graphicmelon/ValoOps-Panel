@@ -1,6 +1,6 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-04-09T15:10:31.274668+00:00",
+  "generatedAt": "2026-04-14T00:52:12.643377+00:00",
   "maps": [
     {
       "mapName": "Abyss",
@@ -11,9 +11,9 @@
     },
     {
       "mapName": "Bind",
-      "sampleCount": 20,
+      "sampleCount": 22,
       "teamCount": 9,
-      "lastUpdatedAt": "2026-04-09T15:08:28.708717+00:00",
+      "lastUpdatedAt": "2026-04-14T00:32:19.203486+00:00",
       "shard": "maps/bind.json"
     },
     {
@@ -31,17 +31,24 @@
       "shard": "maps/corrode.json"
     },
     {
+      "mapName": "Fracture",
+      "sampleCount": 2,
+      "teamCount": 2,
+      "lastUpdatedAt": "2026-04-14T00:51:59.360882+00:00",
+      "shard": "maps/fracture.json"
+    },
+    {
       "mapName": "Haven",
-      "sampleCount": 16,
-      "teamCount": 10,
-      "lastUpdatedAt": "2026-04-09T14:55:03.836371+00:00",
+      "sampleCount": 20,
+      "teamCount": 12,
+      "lastUpdatedAt": "2026-04-11T15:36:49.230275+00:00",
       "shard": "maps/haven.json"
     },
     {
       "mapName": "Lotus",
-      "sampleCount": 8,
+      "sampleCount": 10,
       "teamCount": 4,
-      "lastUpdatedAt": "2026-04-09T14:54:59.168802+00:00",
+      "lastUpdatedAt": "2026-04-14T00:30:49.454170+00:00",
       "shard": "maps/lotus.json"
     },
     {
