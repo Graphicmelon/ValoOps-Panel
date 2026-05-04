@@ -1,6 +1,6 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-05-04T12:11:45.677316+00:00",
+  "generatedAt": "2026-05-04T12:36:04.624050+00:00",
   "maps": [
     {
       "mapName": "Abyss",
@@ -18,9 +18,9 @@
     },
     {
       "mapName": "Breeze",
-      "sampleCount": 22,
-      "teamCount": 10,
-      "lastUpdatedAt": "2026-05-04T11:34:11.493758+00:00",
+      "sampleCount": 24,
+      "teamCount": 12,
+      "lastUpdatedAt": "2026-05-04T12:26:19.650695+00:00",
       "shard": "maps/breeze.json"
     },
     {
@@ -60,9 +60,9 @@
     },
     {
       "mapName": "Split",
-      "sampleCount": 34,
-      "teamCount": 14,
-      "lastUpdatedAt": "2026-05-04T11:35:54.837461+00:00",
+      "sampleCount": 36,
+      "teamCount": 16,
+      "lastUpdatedAt": "2026-05-04T12:26:07.384612+00:00",
       "shard": "maps/split.json"
     }
   ]
