@@ -1,6 +1,6 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-05-03T16:04:36.532486+00:00",
+  "generatedAt": "2026-05-04T12:11:45.677316+00:00",
   "maps": [
     {
       "mapName": "Abyss",
@@ -18,9 +18,9 @@
     },
     {
       "mapName": "Breeze",
-      "sampleCount": 18,
-      "teamCount": 9,
-      "lastUpdatedAt": "2026-05-03T14:00:34.248558+00:00",
+      "sampleCount": 22,
+      "teamCount": 10,
+      "lastUpdatedAt": "2026-05-04T11:34:11.493758+00:00",
       "shard": "maps/breeze.json"
     },
     {
@@ -39,16 +39,16 @@
     },
     {
       "mapName": "Haven",
-      "sampleCount": 26,
+      "sampleCount": 28,
       "teamCount": 15,
-      "lastUpdatedAt": "2026-05-03T14:00:19.476014+00:00",
+      "lastUpdatedAt": "2026-05-04T11:35:44.196300+00:00",
       "shard": "maps/haven.json"
     },
     {
       "mapName": "Lotus",
-      "sampleCount": 18,
+      "sampleCount": 24,
       "teamCount": 8,
-      "lastUpdatedAt": "2026-05-03T14:00:17.810478+00:00",
+      "lastUpdatedAt": "2026-05-04T11:35:31.569096+00:00",
       "shard": "maps/lotus.json"
     },
     {
@@ -60,9 +60,9 @@
     },
     {
       "mapName": "Split",
-      "sampleCount": 28,
+      "sampleCount": 34,
       "teamCount": 14,
-      "lastUpdatedAt": "2026-05-03T14:00:45.091179+00:00",
+      "lastUpdatedAt": "2026-05-04T11:35:54.837461+00:00",
       "shard": "maps/split.json"
     }
   ]
