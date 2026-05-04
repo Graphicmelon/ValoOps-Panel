@@ -94,14 +94,6 @@
 ### 数据覆盖与更新进度
 
 数据按**赛事**为单位组织，每场比赛，以其中一盘（一张地图）的完整数据作为整体更新。
-您可以 Google Sheets 上看到当前的数据覆盖和更新进度。
-
-<p align="center">
-  <a href="https://docs.google.com/spreadsheets/d/1uotrOrg4iuZmTKsVPxlHY-4FX94ApqoigkdvaOez8Cw/edit?usp=sharing">
-    <img src="Readme/sheets-btn.svg" alt="查看实时数据更新进度" width="340">
-  </a>
-</p>
-> 数据持续围绕 VCT CN 赛事更新中，请点击上方徽章查看最新进度。
 
 ---
 
@@ -145,7 +137,6 @@ print(f"共 {len(kills)} 条击杀记录")
 
 ### 短期
 
-- [ ] 在第一赛段开始前，更新完成 VCT CN 2026 Kickoff 启点赛全部 30 场比赛数据
 - [ ] 开源 **ValoOps - Tools**（半自动化数据采集工具）
 
 ### 中期
