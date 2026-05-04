@@ -1,12 +1,12 @@
 {
   "version": "static-dataset-v1",
-  "generatedAt": "2026-04-14T00:52:12.643377+00:00",
+  "generatedAt": "2026-05-03T16:04:36.532486+00:00",
   "maps": [
     {
       "mapName": "Abyss",
-      "sampleCount": 2,
-      "teamCount": 2,
-      "lastUpdatedAt": "2026-04-01T08:59:30.096105+00:00",
+      "sampleCount": 6,
+      "teamCount": 5,
+      "lastUpdatedAt": "2026-05-03T10:40:13.520450+00:00",
       "shard": "maps/abyss.json"
     },
     {
@@ -18,16 +18,16 @@
     },
     {
       "mapName": "Breeze",
-      "sampleCount": 16,
-      "teamCount": 8,
-      "lastUpdatedAt": "2026-04-09T14:54:38.932391+00:00",
+      "sampleCount": 18,
+      "teamCount": 9,
+      "lastUpdatedAt": "2026-05-03T14:00:34.248558+00:00",
       "shard": "maps/breeze.json"
     },
     {
       "mapName": "Corrode",
-      "sampleCount": 2,
-      "teamCount": 2,
-      "lastUpdatedAt": "2026-04-01T08:59:30.095627+00:00",
+      "sampleCount": 8,
+      "teamCount": 6,
+      "lastUpdatedAt": "2026-05-03T12:51:31.358114+00:00",
       "shard": "maps/corrode.json"
     },
     {
@@ -39,16 +39,16 @@
     },
     {
       "mapName": "Haven",
-      "sampleCount": 20,
-      "teamCount": 12,
-      "lastUpdatedAt": "2026-04-11T15:36:49.230275+00:00",
+      "sampleCount": 26,
+      "teamCount": 15,
+      "lastUpdatedAt": "2026-05-03T14:00:19.476014+00:00",
       "shard": "maps/haven.json"
     },
     {
       "mapName": "Lotus",
-      "sampleCount": 10,
-      "teamCount": 4,
-      "lastUpdatedAt": "2026-04-14T00:30:49.454170+00:00",
+      "sampleCount": 18,
+      "teamCount": 8,
+      "lastUpdatedAt": "2026-05-03T14:00:17.810478+00:00",
       "shard": "maps/lotus.json"
     },
     {
@@ -60,9 +60,9 @@
     },
     {
       "mapName": "Split",
-      "sampleCount": 20,
-      "teamCount": 10,
-      "lastUpdatedAt": "2026-04-09T13:26:21.152342+00:00",
+      "sampleCount": 28,
+      "teamCount": 14,
+      "lastUpdatedAt": "2026-05-03T14:00:45.091179+00:00",
       "shard": "maps/split.json"
     }
   ]
